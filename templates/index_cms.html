@@ -1,0 +1,36 @@
+{strip}
+{process_pagedata}
+{/strip}<!doctype html>
+<html lang="{cms_get_language}">
+
+    <head>
+        <title>{title} - {sitename}</title>
+        {metadata}
+        {cms_stylesheet}
+    </head>
+    <body>
+        {include file='cms_template:INC_Loading'}
+
+        {include file='cms_template:INC_Flash_Sale'}
+
+        {include file='cms_template:INC_Top'}
+
+        <div id="main-holder">
+            <div class="outer-wrap" style="background-image:url(/templates/site/img/xBG-1.jpg)">
+                {include file='cms_template:INC_Main_Search'}
+
+                {include file='cms_template:INC_Partners_Logo'}
+
+                {include file='cms_template:INC_Main_Courses'}
+
+                {include file='cms_template:INC_Testimonial'}
+            </div>
+        </div>
+
+        {include file='cms_template:Model_Login'}
+
+        {include file='cms_template:INC_Footer'}
+
+        {include file='cms_template:INC_Scripts'}
+    </body>
+</html>

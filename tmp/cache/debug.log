@@ -1,0 +1,406 @@
+Debug display of 'Is missing in the languagefile: LISE':(0.348267) - (net usage: 8199672) - (peak: 8491688)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.412681) - (net usage: 8200544) - (peak: 8491688)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.436507) - (net usage: 8267552) - (peak: 8552912)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.45216) - (net usage: 8268168) - (peak: 8552912)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.470792) - (net usage: 8334960) - (peak: 8625936)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.500713) - (net usage: 8335576) - (peak: 8625936)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.521442) - (net usage: 8402384) - (peak: 8696688)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.555262) - (net usage: 8403000) - (peak: 8696688)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.576305) - (net usage: 8469808) - (peak: 8764448)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.591514) - (net usage: 8470424) - (peak: 8764448)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(4.286877) - (net usage: 13503000) - (peak: 13805384)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(4.300487) - (net usage: 13503616) - (peak: 13805384)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(4.658187) - (net usage: 13593048) - (peak: 13946408)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(4.670588) - (net usage: 13593664) - (peak: 13946408)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(5.091657) - (net usage: 13678488) - (peak: 14026712)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(5.108904) - (net usage: 13679096) - (peak: 14026712)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(5.559865) - (net usage: 13763984) - (peak: 14112072)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(5.571435) - (net usage: 13764600) - (peak: 14112072)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(5.990532) - (net usage: 13849304) - (peak: 14197272)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(6.003595) - (net usage: 13849920) - (peak: 14197272)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(6.415299) - (net usage: 13985384) - (peak: 14283712)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(6.429441) - (net usage: 13986000) - (peak: 14283712)
+Languagestring: "help_fieldval"
+Debug: (6.449347) - (net usage: 13988928) - (peak: 14283712)
+Database Error: EXECUTE(1146) - Table 'cms221_alison.cms_module_lisetimer_item' doesn't exist
+Backtrace in E:\xampp\htdocs\public_html\cms_version2\cms221_alison\lib\classes\Database\class.compatibility.php on line 97
+DoActionBase at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\admin\moduleinterface.php:76
+DoAction at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\lib\classes\class.CMSModule.php:1489
+DoAction at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\modules\ModuleManager\ModuleManager.module.php:90
+include at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\lib\classes\class.CMSModule.php:1415
+include at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\modules\ModuleManager\action.defaultadmin.php:100
+get_all_module_info at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\modules\ModuleManager\function.admin_installed.php:6
+__construct at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\modules\ModuleManager\lib\class.ModuleManagerModuleInfo.php:162
+__construct at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\modules\ModuleManager\lib\class.ModuleManagerModuleInfo.php:12
+__construct at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\lib\classes\internal\class.CmsExtendedModuleInfo.php:12
+_read_from_module at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\lib\classes\internal\class.CmsModuleInfo.php:62
+get_module_instance at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\lib\classes\internal\class.CmsModuleInfo.php:116
+_load_module at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\lib\classes\class.moduleoperations.inc.php:1119
+__construct at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\lib\classes\class.moduleoperations.inc.php:624
+GetArray at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\modules\LISE\lib\class.LISEInstance.php:75
+SelectLimit at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\lib\classes\Database\class.Connection.php:354
+do_sql at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\lib\classes\Database\class.Connection.php:328
+OnError at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\lib\classes\Database\mysqli\class.Connection.php:127
+call_user_func at E:\xampp\htdocs\public_html\cms_version2\cms221_alison\lib\classes\Database\class.Connection.php:675
+on_error
+Debug display of 'Is missing in the languagefile: LISE':(2.8000000000028E-5) - (net usage: 6989048) - (peak: 7143032)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.032362) - (net usage: 6989656) - (peak: 7143032)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.06895) - (net usage: 7056504) - (peak: 7204456)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.100183) - (net usage: 7057120) - (peak: 7204456)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.141122) - (net usage: 7123816) - (peak: 7277624)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.171882) - (net usage: 7124432) - (peak: 7277624)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.249878) - (net usage: 7191128) - (peak: 7340680)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.282951) - (net usage: 7191744) - (peak: 7340680)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.322125) - (net usage: 7258488) - (peak: 7416048)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.359318) - (net usage: 7259104) - (peak: 7416048)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.259534) - (net usage: 6858312) - (peak: 7148960)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.283967) - (net usage: 6858928) - (peak: 7148960)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.316266) - (net usage: 6925792) - (peak: 7210408)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.338068) - (net usage: 6926408) - (peak: 7210408)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.363942) - (net usage: 6993136) - (peak: 7283376)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.382315) - (net usage: 6993752) - (peak: 7283376)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.405231) - (net usage: 7060464) - (peak: 7346760)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.422827) - (net usage: 7061080) - (peak: 7346760)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.445193) - (net usage: 7127824) - (peak: 7421992)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.463528) - (net usage: 7128440) - (peak: 7421992)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.252817) - (net usage: 6858656) - (peak: 7149808)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.271195) - (net usage: 6859272) - (peak: 7149808)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.292606) - (net usage: 6926136) - (peak: 7211200)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.310905) - (net usage: 6926752) - (peak: 7211200)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.333004) - (net usage: 6993456) - (peak: 7284120)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.351282) - (net usage: 6994072) - (peak: 7284120)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.37489) - (net usage: 7060784) - (peak: 7347448)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.393287) - (net usage: 7061400) - (peak: 7347448)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.4191) - (net usage: 7128136) - (peak: 7422616)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.441101) - (net usage: 7128752) - (peak: 7422616)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.765681) - (net usage: 11030904) - (peak: 11327112)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.783813) - (net usage: 11031520) - (peak: 11327112)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.808716) - (net usage: 11121032) - (peak: 11409032)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.827818) - (net usage: 11121648) - (peak: 11409032)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.853518) - (net usage: 11206480) - (peak: 11498168)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.871485) - (net usage: 11207096) - (peak: 11498168)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.897409) - (net usage: 11291992) - (peak: 11577776)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.916683) - (net usage: 11292608) - (peak: 11577776)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.942435) - (net usage: 11377320) - (peak: 11674208)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.961168) - (net usage: 11377936) - (peak: 11674208)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(1.8000000000074E-5) - (net usage: 6989048) - (peak: 7143032)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.018842) - (net usage: 6989656) - (peak: 7143032)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.040937) - (net usage: 7056504) - (peak: 7204456)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.059827) - (net usage: 7057120) - (peak: 7204456)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.083623) - (net usage: 7123816) - (peak: 7277624)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.101777) - (net usage: 7124432) - (peak: 7277624)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.125476) - (net usage: 7191128) - (peak: 7340680)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.144733) - (net usage: 7191744) - (peak: 7340680)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.167579) - (net usage: 7258488) - (peak: 7416048)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.186491) - (net usage: 7259104) - (peak: 7416048)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(2.1999999999966E-5) - (net usage: 7008104) - (peak: 7161936)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.020709) - (net usage: 7008712) - (peak: 7161936)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.050884) - (net usage: 7075496) - (peak: 7218576)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.072814) - (net usage: 7076112) - (peak: 7218576)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.103295) - (net usage: 7142816) - (peak: 7288592)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.127948) - (net usage: 7143432) - (peak: 7288592)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.156822) - (net usage: 7210144) - (peak: 7359488)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.180379) - (net usage: 7210760) - (peak: 7359488)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.206383) - (net usage: 7277520) - (peak: 7435040)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.225277) - (net usage: 7278136) - (peak: 7435040)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.242346) - (net usage: 6871656) - (peak: 7162880)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.261739) - (net usage: 6872272) - (peak: 7162880)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.285471) - (net usage: 6939064) - (peak: 7219192)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.305414) - (net usage: 6939680) - (peak: 7219192)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.329349) - (net usage: 7006392) - (peak: 7289016)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.350307) - (net usage: 7007008) - (peak: 7289016)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.375928) - (net usage: 7073712) - (peak: 7368216)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.402337) - (net usage: 7074328) - (peak: 7368216)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.430086) - (net usage: 7141064) - (peak: 7427512)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.450541) - (net usage: 7141680) - (peak: 7427512)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.518164) - (net usage: 7947392) - (peak: 8207264)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.538396) - (net usage: 7948008) - (peak: 8208064)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.565262) - (net usage: 8078896) - (peak: 8358288)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.585496) - (net usage: 8079512) - (peak: 8358288)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.610684) - (net usage: 8097144) - (peak: 8393352)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.631438) - (net usage: 8097760) - (peak: 8393352)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.6559) - (net usage: 8115408) - (peak: 8403904)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.675817) - (net usage: 8116024) - (peak: 8403904)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.700872) - (net usage: 8133680) - (peak: 8421928)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.721557) - (net usage: 8134296) - (peak: 8421928)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(1.8999999999991E-5) - (net usage: 7001528) - (peak: 7155448)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.019984) - (net usage: 7002136) - (peak: 7155448)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.044794) - (net usage: 7068912) - (peak: 7211912)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.065418) - (net usage: 7069528) - (peak: 7211912)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.092744) - (net usage: 7136224) - (peak: 7282064)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.113285) - (net usage: 7136840) - (peak: 7282064)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.138691) - (net usage: 7203544) - (peak: 7352872)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.159534) - (net usage: 7204160) - (peak: 7352872)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.185744) - (net usage: 7270904) - (peak: 7428400)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.207351) - (net usage: 7271520) - (peak: 7428400)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.261628) - (net usage: 6871008) - (peak: 7162224)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.282006) - (net usage: 6871624) - (peak: 7162224)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.30652) - (net usage: 6938408) - (peak: 7218552)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.328234) - (net usage: 6939024) - (peak: 7218552)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.353393) - (net usage: 7005728) - (peak: 7288400)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.374067) - (net usage: 7006344) - (peak: 7288400)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.400607) - (net usage: 7073056) - (peak: 7359280)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.422351) - (net usage: 7073672) - (peak: 7359280)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.446984) - (net usage: 7140424) - (peak: 7434800)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.471109) - (net usage: 7141040) - (peak: 7434800)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.245818) - (net usage: 6871008) - (peak: 7162224)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.2673) - (net usage: 6871624) - (peak: 7162224)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.292967) - (net usage: 6938408) - (peak: 7218552)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.315389) - (net usage: 6939024) - (peak: 7218552)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.351535) - (net usage: 7005728) - (peak: 7288400)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.381092) - (net usage: 7006344) - (peak: 7288400)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.416449) - (net usage: 7073056) - (peak: 7359280)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.445506) - (net usage: 7073672) - (peak: 7359280)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.48086) - (net usage: 7140424) - (peak: 7434800)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.510249) - (net usage: 7141040) - (peak: 7434800)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.252176) - (net usage: 6871008) - (peak: 7162224)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.282155) - (net usage: 6871624) - (peak: 7162224)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.319177) - (net usage: 6938408) - (peak: 7218552)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.352178) - (net usage: 6939024) - (peak: 7218552)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.388072) - (net usage: 7005728) - (peak: 7288400)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.418433) - (net usage: 7006344) - (peak: 7288400)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.45471) - (net usage: 7073056) - (peak: 7359280)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.487025) - (net usage: 7073672) - (peak: 7359280)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.523607) - (net usage: 7140424) - (peak: 7434800)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.554558) - (net usage: 7141040) - (peak: 7434800)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.263092) - (net usage: 6871656) - (peak: 7162880)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.29417) - (net usage: 6872272) - (peak: 7162880)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.329211) - (net usage: 6939064) - (peak: 7219192)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.359461) - (net usage: 6939680) - (peak: 7219192)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.394885) - (net usage: 7006392) - (peak: 7289016)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.425212) - (net usage: 7007008) - (peak: 7289016)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.460296) - (net usage: 7073712) - (peak: 7368216)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.491322) - (net usage: 7074328) - (peak: 7368216)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.525662) - (net usage: 7141064) - (peak: 7427512)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.556061) - (net usage: 7141680) - (peak: 7427512)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.633996) - (net usage: 7947392) - (peak: 8207264)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.664433) - (net usage: 7948008) - (peak: 8208064)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.70243) - (net usage: 8078752) - (peak: 8358112)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.73363) - (net usage: 8079368) - (peak: 8358112)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.768525) - (net usage: 8097152) - (peak: 8396416)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.798694) - (net usage: 8097768) - (peak: 8396416)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.834166) - (net usage: 8115416) - (peak: 8403848)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.865283) - (net usage: 8116032) - (peak: 8403848)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.900818) - (net usage: 8133672) - (peak: 8421808)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.931063) - (net usage: 8134288) - (peak: 8421808)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(2.2000000000078E-5) - (net usage: 7001528) - (peak: 7155448)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.03139) - (net usage: 7002136) - (peak: 7155448)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.06697) - (net usage: 7068912) - (peak: 7211912)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.098162) - (net usage: 7069528) - (peak: 7211912)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.133675) - (net usage: 7136224) - (peak: 7282064)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.165778) - (net usage: 7136840) - (peak: 7282064)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.200742) - (net usage: 7203544) - (peak: 7352872)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.231259) - (net usage: 7204160) - (peak: 7352872)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.266112) - (net usage: 7270904) - (peak: 7428400)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.297258) - (net usage: 7271520) - (peak: 7428400)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.259034) - (net usage: 6871008) - (peak: 7162224)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.291225) - (net usage: 6871624) - (peak: 7162224)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.328423) - (net usage: 6938408) - (peak: 7218552)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.359546) - (net usage: 6939024) - (peak: 7218552)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.399157) - (net usage: 7005728) - (peak: 7288400)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.430546) - (net usage: 7006344) - (peak: 7288400)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.468809) - (net usage: 7073056) - (peak: 7359280)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.500113) - (net usage: 7073672) - (peak: 7359280)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.536962) - (net usage: 7140424) - (peak: 7434800)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.569083) - (net usage: 7141040) - (peak: 7434800)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(3.000000000003E-5) - (net usage: 6991688) - (peak: 7145416)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.030673) - (net usage: 6992296) - (peak: 7145416)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.0663) - (net usage: 7059136) - (peak: 7206976)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.097828) - (net usage: 7059752) - (peak: 7206976)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.133932) - (net usage: 7126456) - (peak: 7280072)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.164952) - (net usage: 7127072) - (peak: 7280072)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.20124) - (net usage: 7193776) - (peak: 7343432)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.232853) - (net usage: 7194392) - (peak: 7343432)
+Languagestring: "help_fieldval"
+Debug display of 'Is missing in the languagefile: LISE':(0.268689) - (net usage: 7261128) - (peak: 7418584)
+Languagestring: "help_fieldid"
+Debug display of 'Is missing in the languagefile: LISE':(0.301053) - (net usage: 7261744) - (peak: 7418584)
+Languagestring: "help_fieldval"

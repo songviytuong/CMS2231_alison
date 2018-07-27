@@ -1,0 +1,1237 @@
+__SERIALIZED__a:304:{s:8:"sitemask";s:16:"2203897704d234e5";s:15:"sitedownmessage";s:45:"<p>Site is currently down for maintenance</p>";s:8:"metadata";s:5748:"{strip}
+{if $CustomGS.slogan_content}
+	{assign var="slogan_content" value="{$CustomGS.slogan_content}" scope="global"}
+{else}
+	{assign var="slogan_content" value="The Official Website" scope="global"}
+{/if}
+{if $CustomGS.site_name}
+	{assign var="site_name" value="{$CustomGS.site_name}" scope="global"}
+{else}
+	{assign var="site_name" value="{sitename}" scope="global"}
+{/if}
+{/strip}
+{if isset($pagetitle) && !empty($pagetitle)}
+<title>{if $CustomGS.slogan_active != 1}{$pagetitle} - {$site_name}{else}{$pagetitle} - {$site_name} | {$slogan_content}{/if}</title>
+{elseif isset($meta_title) && !empty($meta_title)}
+<title>{$meta_title}</title>
+{else}
+<title>{if $page_alias=='home' || $page_alias=='under-construction'}{$site_name} | {$slogan_content}{else}{title} - {$site_name} | {$slogan_content}{/if}</title>
+{/if}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" href="{root_url}/favicon.ico" />
+<meta name="Generator" content="Lee Peace"/>
+<meta http-equiv="Expires" content="0"/>
+<meta name="Resource-type" content="Document"/>
+<meta name="Language" content="Vietnamese, English"/>
+<meta name="Keywords" content="{if !empty($meta_keywords)}{$meta_keywords}{else}{$CustomGS.meta_keywords}{/if}"/>
+<meta name="Description" content="{if !empty($meta_description)}{$meta_description|strip|truncate:'160':"":false}{else}{$CustomGS.meta_description|strip|truncate:'160':"":false}{/if}"/>
+<meta name="Identifier-URL" content="{root_url}" />
+<meta name="Original-source" content="{if isset($canonical)}{$canonical}{elseif isset($content_obj)}{$content_obj->GetURL()}{/if}" />
+<link href="{if $page_alias=="product-detail"}{root_url}/{$smarty.get.page}{elseif isset($canonical)}{$canonical}{elseif isset($content_obj)}{$content_obj->GetURL()}{/if}" rel="canonical"/>
+<meta name="Revised" content="{modified_date format="%d/%m/%Y - %H:%M:%S"}" />
+<meta name="Robots" content="index, follow"/>
+<meta name="Revisit-After" content="1 days"/>
+<meta name="Rating" content="search engine optimization"/>
+<meta name="Copyright" content="{$CustomGS.copyright|default:'Webmaster Designer by songviytuong'}"/>
+<meta name="Distribution" content="Global"/>
+<meta name="Classification" content="Seo"/>
+<link rel="author" href="{$CustomGS.google_plus}" />
+<!--Lee Peace-->
+<!-- Social: Facebook -->
+{if $page_alias=='home' || $page_alias=='under-construction'}<meta property="og:url" content="{root_url}"/>{else}<meta property="og:url" content="{get_current_url}"/>{/if}
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=yes">
+<meta property="og:type" content="website" /> 
+<meta property="og:image" content="{if !empty($meta_image) && !empty($meta_image)}{$meta_image}{else}{uploads_url}/{$CustomGS.meta_image}{/if}"/>
+<meta property="og:title" content="{if $page_alias=='home' || $page_alias=='under-construction'}{$site_name} | {$slogan_content}{elseif isset($meta_title) && !empty($meta_title)}{$meta_title}{else}{title} - {$site_name} | {$slogan_content}{/if}"/>
+<meta property="og:description" content="{if !empty($meta_description)}{$meta_description|strip|truncate:'160':"":false}{else}{$CustomGS.meta_description|strip|truncate:'160':"":false}{/if}"/>
+<meta property="og:site_name" content="{if !empty($pagetitle)}{$pagetitle} | {$site_name}{else}{$site_name} | {$slogan_content}{/if}"/>
+<meta property="fb:app_id" content="{$CustomGS.app_id_facebook}" /> 
+<!-- End Social: Facebook -->
+
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="{$CustomGS.twittercard}">
+<meta name="twitter:site" content="{$CustomGS.twittersite}">
+<meta name="twitter:creator" content="{$CustomGS.twittercreator}">
+{if $page_alias=='home' || $page_alias=='under-construction'}
+<meta name="twitter:url" content="{root_url}" />
+{else}
+<meta name="twitter:url" content="{get_current_url}" />
+{/if}
+<meta name="twitter:title" content="{if !empty($pagetitle)}{$pagetitle} | {$site_name}{elseif isset($meta_title) && !empty($meta_title)}{$meta_title}{else}{$site_name} | {$slogan_content}{/if}">
+<meta name="twitter:description" content="{if !empty($meta_description)}{$meta_description|strip|truncate:'160':"":false}{else}{$CustomGS.meta_description|strip|truncate:'160':"":false}{/if}">
+<meta name="twitter:image:src" content="{if !empty($meta_image) && !empty($meta_image)}{$meta_image}{else}{root_url}/images/twitter.jpg{/if}">
+<!-- End Social: Twitter -->
+<meta itemprop="ratingValue" content="" />
+<meta itemprop="ratingCount" content="" />
+<meta itemprop="price" content="" />
+
+<link href="{root_url}/images/touch-icons/touch-icon-ipad.png" rel="apple-touch-icon" sizes="76X76"/>
+<link href="{root_url}/images/touch-icons/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed"/>
+<link href="{root_url}/images/touch-icons/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="{root_url}/images/touch-icons/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="120X120"/>
+<link href="{root_url}/images/touch-icons/touch-icon-ipad-retina.png" rel="apple-touch-icon" sizes="152X152"/>
+
+<meta name="idev" content="{$site_name}"/>
+<meta name="dcterms.title" content="{if !empty($pagetitle)}{$pagetitle} | {$site_name}{else}{$site_name} | {$slogan_content}{/if}"/>
+<meta name="dcterms.creator" content="{$site_name}"/>
+<meta name="dcterms.type" content="Text"/>
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />";s:16:"default_lang_mle";s:5:"en_US";s:50:"LISESEO_mapi_pref_liseseo_default_summary_template";s:7:"default";s:12:"global_umask";s:3:"022";s:20:"auto_clear_cache_age";s:1:"5";s:17:"adminlog_lifetime";s:7:"2678400";s:19:"allow_browser_cache";s:1:"1";s:20:"browser_cache_expiry";s:2:"60";s:8:"sitename";s:10:"TNH v2.2.2";s:39:"CMSContentManager_mapi_pref_locktimeout";s:2:"60";s:39:"CMSContentManager_mapi_pref_lockrefresh";s:3:"120";s:36:"DesignManager_mapi_pref_lock_timeout";s:2:"60";s:36:"DesignManager_mapi_pref_lock_refresh";s:3:"120";s:34:"FileManager_mapi_pref_advancedmode";s:1:"0";s:30:"FileManager_mapi_pref_iconsize";s:4:"32px";s:37:"FileManager_mapi_pref_showhiddenfiles";s:1:"0";s:36:"FileManager_mapi_pref_showthumbnails";s:1:"1";s:37:"FileManager_mapi_pref_permissionstyle";s:3:"xxx";s:42:"CGEcommerceBase_mapi_pref_supplier_modules";s:8:"Products";s:41:"CGEcommerceBase_mapi_pref_currency_symbol";s:1:"$";s:39:"CGEcommerceBase_mapi_pref_currency_code";s:3:"USD";s:38:"CGEcommerceBase_mapi_pref_weight_units";s:3:"lbs";s:38:"CGEcommerceBase_mapi_pref_length_units";s:2:"in";s:49:"CGEcommerceBase_mapi_pref_attrib_item_description";s:60:"{$attrib_text} {if $attrib_adjust != 0}{$attrib_adjust}{/if}";s:41:"ModuleManager_mapi_pref_module_repository";s:58:"https://www.cmsmadesimple.org/ModuleRepository/request/v2/";s:28:"News_mapi_pref_email_subject";s:32:"Un nouvel article a été posté";s:35:"News_mapi_pref_allowed_upload_types";s:16:"gif,png,jpeg,jpg";s:37:"News_mapi_pref_auto_create_thumbnails";s:16:"gif,png,jpeg,jpg";s:26:"Search_mapi_pref_stopwords";s:1434:"à, ai, aie, aient, aies, ait, alors, as, au, aucuns, aura, aurai, auraient, aurais, aurait, auras, aurez, auriez, aurions, aurons, auront, aussi, autre, aux, avaient, avais, avait, avant, avec, avez, aviez, avions, avoir, avons, ayant, ayez, ayons, bon, ça, car, ce, ceci, cela, ces, cet, cette, ceux, chaque, ci, comme, comment, dans, de, début, dedans, dehors, depuis, des, deux, devrait, doit, donc, dos, droite, du, elle, elles, en, encore, es, essai, est, et, étaient, étais, était, étant, état, été, êtes, étions, être, eu, eue, eues, eûmes, eurent, eus, eusse, eussent, eusses, eussiez, eussions, eut, eût, eûtes, eux, fait, faites, fois, font, force, fûmes, furent, fus, fusse, fussent, fusses, fussiez, fussions, fut, fût, fûtes, haut, hors, ici, il, ils, je, juste, la, là, le, les, leur, leurs, lui, ma, maintenant, mais, me, même, mes, mine, moi, moins, mon, mot, ne, ni, nommés, nos, notre, nous, nouveaux, on, ont, ou, où, par, parce, parole, pas, personnes, peu, peut, pièce, plupart, pour, pourquoi, qu, quand, que, quel, quelle, quelles, quels, qui, sa, sans, se, sera, serai, seraient, serais, serait, seras, serez, seriez, serions, serons, seront, ses, seulement, si, sien, soi, soient, sois, soit, sommes, son, sont, sous, soyez, soyons, suis, sujet, sur, ta, tandis, te, tellement, tels, tes, toi, ton, tous, tout, très, trop, tu, un, une, valeur, voie, voient, vont, vos, votre, vous, vu";s:28:"Search_mapi_pref_usestemming";s:5:"false";s:27:"Search_mapi_pref_searchtext";s:15:"Enter Search...";s:39:"CmsJobManager_mapi_pref_tasks_lastcheck";s:10:"1498620028";s:22:"ClearCache_lastexecute";s:10:"1498537231";s:42:"CmsJobManager_mapi_pref_last_async_trigger";s:10:"1498620508";s:39:"CmsJobManager_mapi_pref_last_badjob_run";s:10:"1498620029";s:38:"CGExtensions_mapi_pref_imageextensions";s:11:"jpg,png,gif";s:20:"CmsSecurityCheckTask";s:10:"1498537231";s:19:"CmsVersionCheckTask";s:10:"1498537231";s:25:"PruneAdminlog_lastexecute";s:10:"1498537232";s:26:"ReduceAdminlog_lastexecute";s:10:"1498612457";s:28:"News_mapi_pref_task1_lastrun";s:10:"1498620029";s:36:"CGExtensions_mapi_pref_thumbnailsize";s:2:"75";s:37:"CGExtensions_mapi_pref_watermark_text";s:9:"CMS 2.2.1";s:41:"CGExtensions_mapi_pref_watermark_textsize";s:2:"12";s:38:"CGExtensions_mapi_pref_watermark_angle";s:1:"0";s:37:"CGExtensions_mapi_pref_watermark_font";s:9:"ARIAL.TTF";s:40:"CGExtensions_mapi_pref_watermark_bgcolor";s:7:"#FFFFFF";s:42:"CGExtensions_mapi_pref_watermark_textcolor";s:7:"#000000";s:44:"CGExtensions_mapi_pref_watermark_transparent";s:1:"1";s:57:"CGExtensions_mapi_pref_dflt_sortablelist_template_content";s:3327:"{* sortable list template *}
+<style type="text/css" scoped>
+ul.sortable_selected {
+  min-height: 10em;
+  max-height: 20em;
+  overflow-y: auto;
+  border: 1px solid green;
+}
+ul.sortable_master {
+  min-height: 10em;
+  max-height: 20em;
+  overflow-y: auto;
+  border: 1px solid blue;
+}
+.sortable_list td {
+  text-align: center;
+}
+.sortable_list ul {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  padding-right: 10px;
+  text-align: left;
+}
+.sortable_list ul li {
+  list-style: none;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+  cursor: move;
+}
+</style>
+
+<script type='text/javascript'>
+function sortable_list(_container) {
+    var container, selected, master, value_fld;
+
+    container = _container;
+    var element_name = container.attr('id');
+    selected = $('ul.sortable_selected',container);
+    master = $('ul.sortable_master',container);
+    var sel = 'input[name="'+element_name+'"]';
+    value_fld = $(sel,container);
+
+    var h = Math.max(master.height(),selected.height());
+    var w = Math.max(master.width(),selected.width());
+    selected.height(h); master.height(h);
+    if( w > 0 ) {
+        selected.width(w); master.width(w);
+    }
+    selected.sortable({
+       connectWith: master,
+       update: function( ev, ui ) {
+          console.debug('in selectted update');
+          if( {$max_selected} > 0 && $('li',this).length > {$max_selected} ) {
+             $(ui.sender).sortable('cancel');
+          }
+          else {
+	     var sel = [];
+	     $('li',this).each(function(){
+	        var key = $(this).data('key');
+		sel.push(key);
+	     });
+	     value_fld.val(sel.join());
+          }
+       }
+    });
+    master.sortable({
+       connectWith: selected
+    });
+};
+
+$(document).ready(function(){
+   var cont = $('#{$selectarea_prefix}');
+   var my_sortable_list = new sortable_list(cont);
+});
+</script>
+
+{* note: $selectarea_prefix contains the name of the input element that must exist/be created on form submit.
+         On submission of the form, this field must contain a comma separated list of the currently selected keys.
+         $selectarea_selected is an associative array of keys and values representing the currently selected item.
+	 $selectarea_selected_str is a string consisting of a comma separated list of currently selected keys.
+*}
+<div class="sortable_list" id="{$selectarea_prefix}">
+  <table>
+  <tr>
+    <td>{$label_left}</td>
+    <td>{$label_right}</td>
+  </tr>
+  <tr>
+    <td valign="top">
+      {* left column - for the selected items *}
+      <ul class="sortable_selected" title="{$cge->Lang('sortablelist_selectlist')}">
+      {if isset($selectarea_selected)}
+        {foreach $selectarea_selected as $key => $val}
+          <li data-key="{$key}">{$val}</li>
+        {/foreach}
+      {/if}
+      </ul>
+    </td>
+    <td valign="top">
+      {* right column - for the master list *}
+      <ul class="sortable_master" title="{$cge->Lang('sortablelist_masterlist')}">
+      {foreach $selectarea_masterlist as $key => $val}
+        {if !isset($selectarea_selected) || !isset($selectarea_selected[$key])}
+          <li data-key="{$key}">{$val}</li>
+	{/if}
+      {/foreach}
+      </ul>
+    </td>
+  </tr>
+  </table>
+  <input type="hidden" class="sortable_val" name="{$selectarea_prefix}" value="{$selectarea_selected_str}"/>
+</div> {* .sortable_list *}
+";s:49:"CGExtensions_mapi_pref_dflt_sortablelist_template";s:6:"Sample";s:33:"cf669c2c49b7eeaf80506380723ea25f6";s:5417:"a:15:{s:8:"cg_cmsms";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:2:{s:4:"name";s:8:"cg_cmsms";s:8:"callback";a:2:{i:0;s:13:"cge_jshandler";i:1;s:4:"load";}}}s:6:"cgform";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:4:{s:4:"name";s:6:"cgform";s:6:"module";s:11:"JQueryTools";s:6:"jsfile";a:1:{i:0;s:64:"{$root_path}\modules\JQueryTools/lib/cgform.lib/jquery.cgform.js";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:7:"cluetip";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:6:{s:4:"name";s:7:"cluetip";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:3:{i:0;s:74:"{$root_path}\modules\JQueryTools/lib/cluetip.lib/lib/jquery.hoverIntent.js";i:1;s:75:"{$root_path}\modules\JQueryTools/lib/cluetip.lib/lib/jquery.bgiframe.min.js";i:2;s:70:"{$root_path}\modules\JQueryTools/lib/cluetip.lib/jquery.cluetip.min.js";}s:7:"cssfile";a:1:{i:0;s:67:"{$root_path}\modules\JQueryTools/lib/cluetip.lib/jquery.cluetip.css";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:8:"combobox";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:4:{s:4:"name";s:8:"combobox";s:6:"module";s:11:"JQueryTools";s:6:"jsfile";a:1:{i:0;s:75:"{$root_path}\modules\JQueryTools/lib/combobox.lib/jquery.custom-combobox.js";}s:7:"depends";a:1:{i:0;s:2:"ui";}}}s:8:"fancybox";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:6:{s:4:"name";s:8:"fancybox";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:2:{i:0;s:73:"{$root_path}\modules\JQueryTools/lib/fancybox.lib/jquery.fancybox.pack.js";i:1;s:81:"{$root_path}\modules\JQueryTools/lib/fancybox.lib/jquery.mousewheel-3.0.6.pack.js";}s:7:"cssfile";a:1:{i:0;s:69:"{$root_path}\modules\JQueryTools/lib/fancybox.lib/jquery.fancybox.css";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:10:"fileupload";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:4:{s:4:"name";s:10:"fileupload";s:6:"module";s:11:"JQueryTools";s:6:"jsfile";a:2:{i:0;s:81:"{$root_path}\modules\JQueryTools/lib/fileupload.lib/js/jquery.iframe-transport.js";i:1;s:75:"{$root_path}\modules\JQueryTools/lib/fileupload.lib/js/jquery.fileupload.js";}s:7:"depends";a:2:{i:0;s:6:"jquery";i:1;s:2:"ui";}}}s:4:"form";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:4:{s:4:"name";s:4:"form";s:6:"module";s:11:"JQueryTools";s:6:"jsfile";a:1:{i:0;s:60:"{$root_path}\modules\JQueryTools/lib/form.lib/jquery.form.js";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:6:"jquery";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:4:{s:4:"name";s:6:"jquery";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:2:{i:0;s:68:"{$root_path}\modules\JQueryTools/lib/jquery.lib/jquery-1.11.3.min.js";i:1;s:75:"{$root_path}\modules\JQueryTools/lib/jquery.lib/jquery-migrate-1.2.1.min.js";}}}s:11:"jquerytools";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:4:{s:4:"name";s:11:"jquerytools";s:6:"module";s:11:"JQueryTools";s:7:"cssfile";a:1:{i:0;s:68:"{$root_path}\modules\JQueryTools/lib/jquerytools.lib/JQueryTools.css";}s:7:"depends";a:1:{i:0;s:11:"tablesorter";}}}s:4:"json";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:5:{s:4:"name";s:4:"json";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:1:{i:0;s:68:"{$root_path}\modules\JQueryTools/lib/json.lib/jquery.json-2.4.min.js";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:7:"jsviews";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:5:{s:4:"name";s:7:"jsviews";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:1:{i:0;s:63:"{$root_path}\modules\JQueryTools/lib/jsviews.lib/jsviews.min.js";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:8:"lightbox";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:6:{s:4:"name";s:8:"lightbox";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:1:{i:0;s:76:"{$root_path}\modules\JQueryTools/lib/lightbox.lib/jquery.lightbox-0.5.min.js";}s:7:"cssfile";a:1:{i:0;s:77:"{$root_path}\modules\JQueryTools/lib/lightbox.lib/css/jquery.lightbox-0.5.css";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:11:"tablesorter";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:5:{s:4:"name";s:11:"tablesorter";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:2:{i:0;s:78:"{$root_path}\modules\JQueryTools/lib/tablesorter.lib/jquery.tablesorter.min.js";i:1;s:71:"{$root_path}\modules\JQueryTools/lib/tablesorter.lib/jquery.metadata.js";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:2:"ui";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:7:{s:4:"name";s:2:"ui";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:12:"css_nominify";b:1;s:6:"jsfile";a:1:{i:0;s:60:"{$root_path}\modules\JQueryTools/lib/ui.lib/jquery-ui.min.js";}s:7:"cssfile";a:1:{i:0;s:61:"{$root_path}\modules\JQueryTools/lib/ui.lib/jquery-ui.min.css";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:13:"cg_datepicker";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:2:{s:4:"name";s:13:"cg_datepicker";s:8:"callback";s:36:"\JQueryTools\datepicker_plugin::load";}}}";s:42:"CustomGS_mapi_pref_input_custom_modulename";s:8:"Settings";s:36:"Products_mapi_pref_summary_pagelimit";s:3:"100";s:62:"CGExtensions_mapi_pref_cgeint_49e8055daa9a399136bbb14008b4a7d4";s:10:"1498538697";s:12:"frontendlang";s:5:"en_US";s:15:"frontendwysiwyg";s:7:"TinyMCE";s:10:"logintheme";s:9:"OneEleven";s:14:"backendwysiwyg";s:0:"";s:17:"defaultdateformat";s:0:"";s:15:"thumbnail_width";s:2:"96";s:16:"thumbnail_height";s:2:"96";s:12:"searchmodule";s:6:"Search";s:19:"xmlmodulerepository";s:0:"";s:12:"checkversion";s:1:"1";s:12:"lock_timeout";s:2:"60";s:33:"CGSmartImage_mapi_pref_embed_mode";s:9:"sizelimit";s:33:"CGSmartImage_mapi_pref_embed_size";s:2:"32";s:33:"CGSmartImage_mapi_pref_embed_type";s:11:"png,jpg,gif";s:44:"CGSmartImage_mapi_pref_image_url_hascachedir";s:1:"0";s:32:"CGSmartImage_mapi_pref_cache_age";s:1:"0";s:33:"CGSmartImage_mapi_pref_responsive";s:1:"1";s:34:"CGSmartImage_mapi_pref_progressive";s:1:"1";s:30:"CGSmartImage_mapi_pref_aliases";s:109:"a:1:{i:0;a:2:{s:4:"name";s:13:"std_thumbnail";s:7:"options";s:39:"filter_watermark=1 width=150 height=150";}}";s:42:"Products_mapi_pref_products_currencysymbol";s:1:"$";s:39:"Products_mapi_pref_products_weightunits";s:2:"kg";s:37:"Products_mapi_pref_allowed_imagetypes";s:16:"jpg,jpeg,gif,png";s:36:"Products_mapi_pref_allowed_filetypes";s:28:"pdf,doc,txt,jpg,jpeg,gif,png";s:37:"Products_mapi_pref_deleteproductfiles";s:1:"1";s:29:"Products_mapi_pref_upload_dir";s:9:"_products";s:31:"Products_mapi_pref_slugtemplate";s:62:"{if empty($hierarchy3)}{$name}{else}{$hierarchy3}/{$name}{/if}";s:42:"FrontEndUsers_mapi_pref_min_passwordlength";s:1:"6";s:42:"FrontEndUsers_mapi_pref_max_passwordlength";s:2:"20";s:41:"FrontEndUsers_mapi_pref_enhanced_password";s:1:"1";s:39:"FrontEndUsers_mapi_pref_pwrequiredchars";s:17:"~@#$%^&*=+_-().,!";s:42:"FrontEndUsers_mapi_pref_min_usernamelength";s:1:"4";s:42:"FrontEndUsers_mapi_pref_max_usernamelength";s:2:"40";s:44:"FrontEndUsers_mapi_pref_user_session_expires";s:4:"1800";s:40:"FrontEndUsers_mapi_pref_cookie_keepalive";s:1:"0";s:34:"FrontEndUsers_mapi_pref_cookiename";s:8:"x2a0afe4";s:37:"FrontEndUsers_mapi_pref_default_group";s:2:"-1";s:45:"FrontEndUsers_mapi_pref_required_field_marker";s:1:"*";s:44:"FrontEndUsers_mapi_pref_required_field_color";s:4:"blue";s:40:"FrontEndUsers_mapi_pref_require_onegroup";s:1:"1";s:43:"FrontEndUsers_mapi_pref_hidden_field_marker";s:1:"!";s:42:"FrontEndUsers_mapi_pref_hidden_field_color";s:5:"green";s:43:"FrontEndUsers_mapi_pref_pageid_forgotpasswd";s:0:"";s:45:"FrontEndUsers_mapi_pref_pageid_changesettings";s:0:"";s:36:"FrontEndUsers_mapi_pref_pageid_login";s:0:"";s:37:"FrontEndUsers_mapi_pref_pageid_logout";s:0:"";s:42:"FrontEndUsers_mapi_pref_pageid_afterverify";s:0:"";s:46:"FrontEndUsers_mapi_pref_allow_duplicate_emails";s:1:"0";s:41:"FrontEndUsers_mapi_pref_username_is_email";s:1:"1";s:41:"FrontEndUsers_mapi_pref_passwordfldlength";s:2:"20";s:41:"FrontEndUsers_mapi_pref_usernamefldlength";s:2:"40";s:45:"FrontEndUsers_mapi_pref_allow_repeated_logins";s:1:"0";s:46:"FrontEndUsers_mapi_pref_image_destination_path";s:8:"_feusers";s:48:"FrontEndUsers_mapi_pref_allowed_image_extensions";s:14:".gif,.png,.jpg";s:44:"FrontEndUsers_mapi_pref_notification_subject";s:22:"FEU Event Notification";s:40:"FrontEndUsers_mapi_pref_expireage_months";s:2:"60";s:36:"FrontEndUsers_mapi_pref_use_usersalt";s:1:"1";s:58:"Products_mapi_pref_cgeint_068f80c7519d0528fb08e82137a72131";s:10:"1500162844";s:61:"JQueryTools_mapi_pref_cgeint_3d75bc6d79974e3bba794fce536fb1dc";s:10:"1500162851";s:63:"FrontEndUsers_mapi_pref_cgeint_029865419fbd69f841f7b07d0d251b0e";s:10:"1499786326";s:66:"ProductsByVendor_mapi_pref_cgeint_e965e4b594297280c3e2be2cc2a78f2b";s:10:"1499786278";s:47:"JMFilePicker_mapi_pref_restrict_users_diraccess";s:0:"";s:42:"JMFilePicker_mapi_pref_show_filemanagement";s:1:"1";s:38:"JMFilePicker_mapi_pref_show_thumbfiles";s:0:"";s:36:"JMFilePicker_mapi_pref_allow_scaling";s:1:"1";s:36:"JMFilePicker_mapi_pref_scaling_width";s:0:"";s:37:"JMFilePicker_mapi_pref_scaling_height";s:0:"";s:36:"JMFilePicker_mapi_pref_create_thumbs";s:1:"1";s:38:"JMFilePicker_mapi_pref_allow_upscaling";s:0:"";s:35:"JMFilePicker_mapi_pref_use_mimetype";s:0:"";s:33:"JMFilePicker_mapi_pref_feu_access";s:0:"";s:29:"LISE_mapi_pref_allow_autoscan";s:1:"0";s:32:"LISE_mapi_pref_allow_autoinstall";s:1:"1";s:31:"LISE_mapi_pref_allow_autoupdate";s:1:"1";s:25:"Products_mapi_pref_sortby";s:12:"product_name";s:39:"Products_mapi_pref_products_lengthunits";s:2:"in";s:33:"Products_mapi_pref_feu_ownergroup";s:1:"1";s:44:"Products_mapi_pref_use_detailpage_for_search";s:1:"0";s:34:"Products_mapi_pref_usehierpathurls";s:1:"0";s:34:"LISEBanners_mapi_pref_friendlyname";s:11:"LISEBanners";s:32:"CustomGS_mapi_pref_admin_section";s:4:"main";s:58:"LISEBanners_mapi_pref_lisebanners_default_archive_template";s:7:"default";s:31:"LISEBanners_mapi_pref_sortorder";s:3:"ASC";s:34:"LISEBanners_mapi_pref_adminsection";s:7:"content";s:32:"LISEBanners_mapi_pref_url_prefix";s:11:"lisebanners";s:33:"LISEBanners_mapi_pref_urltemplate";s:23:"{$prefix}/{$item_title}";s:59:"LISEBanners_mapi_pref_lisebanners_default_category_template";s:7:"default";s:58:"LISEBanners_mapi_pref_lisebanners_default_summary_template";s:7:"default";s:57:"LISEBanners_mapi_pref_lisebanners_default_detail_template";s:7:"default";s:57:"LISEBanners_mapi_pref_lisebanners_default_search_template";s:7:"default";s:39:"LISETestimonials_mapi_pref_friendlyname";s:16:"LISETestimonials";s:40:"LISETestimonials_mapi_pref_item_singular";s:4:"Item";s:38:"LISETestimonials_mapi_pref_item_plural";s:5:"Items";s:37:"LISETestimonials_mapi_pref_item_title";s:5:"Title";s:38:"LISETestimonials_mapi_pref_urltemplate";s:23:"{$prefix}/{$item_title}";s:68:"LISETestimonials_mapi_pref_lisetestimonials_default_summary_template";s:7:"default";s:67:"LISETestimonials_mapi_pref_lisetestimonials_default_detail_template";s:7:"default";s:67:"LISETestimonials_mapi_pref_lisetestimonials_default_search_template";s:7:"default";s:69:"LISETestimonials_mapi_pref_lisetestimonials_default_category_template";s:7:"default";s:68:"LISETestimonials_mapi_pref_lisetestimonials_default_archive_template";s:7:"default";s:62:"CompanyDirectory_mapi_pref_companydir_pref_newsummary_template";s:2824:"{* CompanyDirectory Summary Template *}
+{if isset($messages)}
+<div class="row CompanyDirectoryMessage">
+ <ul>
+   {foreach from=$messages item='one'}
+     <li>{$one}</li>
+   {/foreach}
+ </ul>
+</div>
+{/if}
+
+{if isset($errors)}
+<div class="row CompanyDirectoryError">
+ <ul>
+   {foreach from=$errors item='one'}
+     <li>{$one}</li>
+   {/foreach}
+ </ul>
+</div>
+{/if}
+
+{if isset($items)}
+  {if isset($firstlink) || isset($nextlink)}
+    <div class="row">
+      <div class="col-md-offset-8"></div>
+      <div class="col-md-4">
+        {if isset($firstlink)}{$firstlink}&nbsp;{$prevlink}&nbsp;&nbsp;{/if}
+        {$pagetext} {$curpage} {$oftext} {$pagecount}
+        {if isset($nextlink)}&nbsp;&nbsp;{$nextlink}&nbsp;{$lastlink}{/if}
+      </div>
+    </div>
+  {/if}
+
+  {foreach from=$items item=entry}
+  <article class="CompanyDirectoryItem" style="padding-bottom: 2em;">
+    <div class="row">
+      <div class="col-md-2">
+      {if $entry->picture_location ne ''}
+        {CGSmartImage src=$entry->picture_path height=150 width=150}
+      {/if}
+      </div>
+      <div class="col-md-10">
+        <div class="row">
+          {$CompanyDirectory->Lang('name')}:&nbsp;<a href="{$entry->detail_url}">{$entry->company_name}</a>
+        </div>
+        <div class="row">
+          {module_action_link module='CGSocialApp' action='addcheckin' location=$entry->id text='Checkin Here'}
+        </div>
+        {if $entry->address ne ''}
+          <div class="row">{$CompanyDirectory->Lang('address')}:&nbsp;{$entry->address}</div>
+        {/if}
+        {if $entry->website ne ''}
+          <div class="row">{$CompanyDirectory->Lang('website')}:&nbsp;<a href="http://{$entry->website}">{$entry->website}</a></div>
+        {/if}
+      </div>
+    </div>
+
+    {* sample of addressing a custom field directly *}
+{strip}
+    {if isset($entry->fields)}
+      {if isset($entry->fields.foo) && $entry->fields.foo->value != ''}
+        Foo: {$entry->fields.foo->value}<br/>
+      {/if}
+
+      {* sample of addressing a field with spaces or other chars in the name
+      Special Field: {assign var='tmp' value='The Field Name'}{$entry->fields.$tmp->value}<br/>
+    *}
+  
+    {* sample of addressing the value of a dropdown field: *}
+    {if isset($entry->fields.mydropdown) && $entry->fields.mydropdown->dropdown_value != ''}
+      Sample Dropdown: {$entry->fields.mydropdown->dropdown_value}<br/>
+    {/if}
+
+    {* sample of looping through the fields associative array
+    {foreach from=$entry->fields key='fieldname' item='field'}
+      {if isset($field->value) && $field->value != ''}
+        {$field->name} <em>({$field->type})</em>: {$field->value}<br/>
+      {/if}
+    {/foreach}
+    *}
+  {/if}
+{/strip}
+
+  </article>
+  {foreachelse}
+    <div class="alert alert-error">{$CompanyDirectory->Lang('error_nocompaniesmatch')}</div>
+  {/foreach}
+{/if}
+";s:63:"CompanyDirectory_mapi_pref_companydir_pref_dfltsummary_template";s:6:"Sample";s:61:"CompanyDirectory_mapi_pref_companydir_pref_newdetail_template";s:3619:"{* CompanyDirectory Detail Template *}
+{strip}
+<article class="CompanyDirectoryItem">
+  {if isset($entry->canonical)}{$canonical=$entry->canonical}{/if}
+  <div class="row-fluid">
+     <div class="span2">
+       {if $entry->logo_location ne ''}
+         <div class="row-fluid">
+         {CGSmartImage src=$entry->logo_path max_width=150 max_height=150}
+         </div>
+       {/if}
+
+       {if $entry->picture_location ne ''}
+         <div class="row-fluid">
+         {CGSmartImage src=$entry->picture_path max_width=800 max_height=600 notag=1 noembed=1 assign='picture_url'}
+         <a class="fancybox" href="{$picture_url}">{CGSmartImage src=$entry->picture_path max_width=150 max_height=150}</a>
+         </div>
+       {/if}
+     </div>
+
+     <div class="span10">
+       <h4>{if $entry->website !=''}<a class="external" href="{$entry->website}" title="{$CompanyDirectory->Lang('view_website')}">{$entry->company_name}</a>{else}{$entry->company_name}{/if}</h4>
+       <div class="row-fluid">
+         {$entry->address}
+       </div>
+       {if $entry->telephone ne ''}
+         <div class="row-fluid">
+           {$CompanyDirectory->Lang('telephone')}: {$entry->telephone}
+         </div>
+       {/if}
+       {if $entry->fax ne ''}
+         <div class="row-fluid">
+           {$CompanyDirectory->Lang('fax')}: {$entry->fax}
+         </div>
+       {/if}
+       {if $entry->contact_email ne ''}
+         <div class="row-fluid">
+           {$CompanyDirectory->Lang('contactemail')}: <a href="mailto:{$entry->contact_email}">{$entry->contact_email}</a>
+         </div>
+       {/if}
+
+       {if $entry->hier_id > 0}
+         <div class="row-fluid">
+           {$CompanyDirectory->Lang('hierarchy')}: {cd_hierbreadcrumb page=$summarypage hier=$entry->hier_id hier_children=1}
+         </div>
+       {/if}
+
+       {if isset($categories)}
+         <div class="row-fluid">
+         {$CompanyDirectory->Lang('categories')}:&nbsp;
+         {foreach $categories as $catname => $rec}
+	   {module_action_link action=default category=$rec->id urlonly=1 assign=url}
+           <a href="{$url}" title="{$rec->description|strip_tags|summarize:40}">{$catname}</a>{if !$rec@last},  {/if}
+         {/foreach}
+         </div>
+       {/if}
+
+       {if $entry->details ne ''}
+         <div class="row-fluid" style="border-top: 1px solid silver; margin-top: 0.5em;">{$entry->details}</div>
+       {/if}
+
+       {if isset($entry->fields) }
+         {* handle everything but images *}
+         {$have_images=0}
+         {foreach from=$entry->fields key='field_name' item=customfield}
+           {if $customfield->type == 'image'}
+             {$have_images=1}
+           {else}
+             <div class="row-fluid">
+               {$customfield->name}:&nbsp;
+               {if $customfield->type == 'file'}
+                  <a href="{$customfield->file_url}">{$customfield->value}</a>
+               {else}
+                 {$customfield->name}: {$customfield->value}
+               {/if}
+             </div>
+           {/if}
+         {/foreach}
+
+         {* now handle images *}
+         {if $have_images}
+           <div class="row-fluid">
+           {foreach from=$entry->fields key='field_name' item=customfield}
+             <div class="span2">
+               {CGSmartImage src=$customfield->url max_width=800 max_height=600 notag=1 noembed=1 assign='img'}
+               <a class="fancybox" href="{$img}" rel="img_album">{CGSmartImage src=$customfield->url width=150 height=150}</a>
+             </div>
+           {/foreach}
+           </div>
+         {/if}
+       {/if}
+
+     </div>{* span10 *}
+  </div>{* top row *}
+</article>
+{/strip}";s:62:"CompanyDirectory_mapi_pref_companydir_pref_dfltdetail_template";s:6:"Sample";s:67:"CompanyDirectory_mapi_pref_companydir_pref_newcategorylist_template";s:545:"{function do_categories}
+<ul>
+  {foreach $list as $obj}
+  <li>
+    {* note... the count represents the sum of the companies matching the query in this category, and all children *}
+    {if isset($obj->count) && $obj->count gt 0}
+      <a href="{$obj->summary_url}">{$obj->name|escape}</a>  <em>({$obj->count})</em>
+    {else}
+      {$obj->name|escape} <em>(0)</em>
+    {/if}
+    {if isset($obj->children) && count($obj->children)}{do_categories list=$obj->children}{/if}
+  </li>
+  {/foreach}
+</ul>
+{/function}
+{do_categories list=$categorylist}
+";s:68:"CompanyDirectory_mapi_pref_companydir_pref_dfltcategorylist_template";s:6:"Sample";s:63:"CompanyDirectory_mapi_pref_companydir_pref_newhierlist_template";s:502:"{function do_hierdata depth=1}
+  <ul class="cd_hier-{$depth}">
+  {foreach $data as $key => $item}
+      <li>
+        {if $item.count gt 0}
+          <a href="{$item.url}">{$item.name} <em>({$item.count})</em></a>
+        {else}
+          {$item.name} <em>({$item.count})</em>
+        {/if}
+        {if isset($item.children) && count($item.children) > 0}
+          {do_hierdata depth=$depth+1 data=$item.children}
+        {/if}
+      </li>
+  {/foreach}
+  </ul>
+{/function}
+
+{do_hierdata data=$hierdata}
+";s:64:"CompanyDirectory_mapi_pref_companydir_pref_dflthierlist_template";s:6:"Sample";s:65:"CompanyDirectory_mapi_pref_companydir_pref_newsearchform_template";s:12321:"{* new search template
+  misc parameters:
+  {$actionid}cd_resultpage - (string/integer) page id for summary results (see the help for the resultpage parameter)
+  {$actionid}cd_summarytemplate - (string) see the help for the summarytemplate parameter
+  {$actionid}cd_detailpage - (string/integer) page id for detail results (see the help for the detailpage parameter)
+  {$actionid}cd_detailtemplate - (string/integer) page id for detail results (see the help for the detailtemplate parameter)
+  {$actionid}cd_pagelimit - (integer) Number of items per page.  (see the help for the pagelimit parameter)
+  {$actionid}cd_page - (integer) Number of items per page.  (see the help for the page parameter)
+  {$actionid}cd_sortby - (string) Sorting (see the help for the sortby parameter)
+  {$actionid}cd_sortorder - (string) Sort order (ascending or descending)
+
+  valid fields are:
+  {$actionid}cd_submit - (string) for a submit button
+  {$actionid}cd_reset  - (string) a button to reset the form.
+  {$actionid}cd_resetall  - (string) a button to reset all saved search data in the session.
+  {$actionid}cd_phrase - (string) for advanced text search
+     see MySQL full text search.  Searches on words (subject to stop words, and minimum word length in MySQL)
+     valid syntaxes:
+        "some phrase" search for the exact text (quotes important)
+        word1 word2   search for the two words
+        word1 -word2  search for entries with the first word but no occurrance of the second word
+        +word1 +word2 search for entries with absolutely those two words.
+
+  {$actionid}cd_lat - (float) - specify a latitude for a radius search
+  {$actionid}cd_long - (float) - specify a longitude for a radius search
+  {$actionid}cd_address - (string) for an address
+     (default = EMPTY)
+  {$actionid}cd_radius - (int) for a distance search (valid only for postcode or lat/long searches))
+     (default = 50)
+  {$actionid}cd_units  - (string) for a distance search (valid only for postcode or lat/long searches) ("km" or "miles")
+     (default = miles)
+  {$actionid}cd_name   - (string) for a company name
+     (default = EMPTY)
+  {$actionid}cd_name_type - (string) controls how the name is used ("exact" or "like")
+     (default = exact)
+  {$actionid}cd_address_type - (string) controls how the address field is used ("substr" or "lookup")
+     (default = substr)
+  {$actionid}cd_nochildren - (integer) optionally disable searching through matching child categories and/or hierarchies.
+  {$actionid}cd_category[] - (array of integers), or comma separated list of integers, to filter on categories.  Use the {$categories} array to build checkboxes.  This specifies an IN relationship.... companies in any ONE of the specified categories will be returned.
+     (default = EMPTY)
+  {$actionid}cd_hier   - (int) to specify a hierarchy id that results must belong in.
+{$actionid}cd_field_expr[] - array of custom field expressions, each element should be an array of three more elements indicating the field name, the filter value, and an (optional) expression type. i.e:
+  {$actionid}cd_sortby - (string) see the help for this parameter
+  {$actionid}cd_sortorder - (string) see the help for this parameter
+
+  Custom Field Searches
+  ---------------------
+  It is possible to provide input fields to allow the user to filter/search on custom fields.  This is done by providing an array of expressions with the name cdx_field.  Each expression consists of three parts:
+    a: fldname: The field name
+    b: fldval:  The field value (term or value to filter on)
+       NOTE: empty values, or the special value **IGNORE** will result in that field being ignored in the the expression.
+    c: expr:    The field expression
+       possible values for the expression are:
+         AUTO: automatically determine an expression based on the field type, and other criteria.
+               for multiselect, image, file, and other custom field types a substring comparison.
+         LIKE: Match records where the fldval specified exists as a substring within the companies fldvalue
+         SW/STARTSWITH: Match records where the field value in the database starts with the fldval specified
+         EW/ENDSSWITH: Match records where the field value in the database ends with the fldval specified
+         </LT: Match records where the field value in the database is less than the fldval specified.
+         <=/LTE/LE: Match records where the field value in the database is less than or equal to the fldval specified.
+         >/GT: Match records where the field value in the database is greater than the fldval specified.
+         >=/GTE/GE: Match records where the field value in the database is greater than or equal to the fldval specified.
+         =/EQ: Match records where the field value in the database is exactly equal to the fldval specified.
+         !=/NE: Match records where the field value in the database is not equal to the fldval specified.
+    d: type:     The field type
+       (for expressions LT,LE,GT,GE,EQ,NE)
+       Allows casting the field value to a more appropriate type for comparisons.
+       possible values for the type are:
+         FLOAT, REAL, DECIMAL  (floating point)
+         INT, INTEGER, SIGNED  (signed integer)
+         UNSIGNED (unsigned integer)
+
+  See below for examples of using the cdx_field type.
+
+  Postal Code Searches
+  ---------------------
+  Notes:  If a postal/zip code is specified, and the Postcode module, and CGGoogleMaps modules are installed, then the potal/zip code will be used first to calculate a geographic search area.
+  {$actionid}cd_postal  - (string) for a postal code (valid only if the Postcodes module is installed)
+     (default = EMPTY)
+  {$actionid}cd_postalchars  - (integer) for a postal code (valid only if the Postcodes module is installed)
+     Used to specify the number of accurate characters that can be used to do a postal code -> lat long lookup.
+     Some postal code databases are only accurate to the first N characters.
+    (default = 0 == use all chars of supplied postal code)
+  {$actionid}cd_country - (string) for a postal code (valid only if the Postcodes module is installed) (use two letter country code)
+     (default = US)
+  {$actionid}cd_searchaddress - (int) to specify that, when doing a postal code search that the address field should be searched as well.
+     (default 0)
+
+  Supplying Parameters
+  --------------------
+  It is possible to put many of the above described parameters directly into the form (between the formstart and formend tags).  Additionally,
+  for the security minded many parameters can be supplied in the tag to the module... or on the relevent summary and detail pages using the
+  {cge_module_hint} tag that is supplied with later versions of CompanyDirectory.
+*}
+
+{* use some jquery, and browser location information to fill the lat/long fields this is great for mobile sites, note this will enable
+   coordinate based searches and will exclude any companies that do not have latitudes and longitudes stored *}
+{*
+<script type="text/javascript">{literal}//<![CDATA[
+if( typeof(jQuery) != 'undefined' ){
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position){
+      // Try W3C Geolocation (Preferred)
+      $('#latitude').val(position.coords.latitude);
+      $('#longitude').val(position.coords.longitude);
+    });
+  }
+}
+//]]>
+{/literal}</script>
+*}
+
+{strip}
+<div id="cd_searchform">{$formstart}
+  {* display any errors *}
+  {if isset($errors)}
+  <p class="errors">
+    {'<br/>'|implode:$errors}
+  </p>
+  {/if}
+
+  {* phrase search *}
+  <div class="row">
+    <p class="col-md-3 text-right">{$mod->Lang('phrase')}</p>
+    <p class="col-md-9">
+      <input type="text" name="{$actionid}cd_phrase" size="40" value="{$saved.phrase|default:''}"/>
+    </p>
+  </div>
+
+  {* name substring search *}
+  <div class="row">
+    <p class="col-md-3 text-right">{$mod->Lang('name')}</p>
+    <p class="col-md-9">
+      <input type="text" name="{$actionid}cd_name" size="40" value="{$saved.name|default:''}"/>
+      <input type="hidden" name="{$actionid}cd_name_type" value="LIKE"/>
+    </p>
+  </div>
+
+  {* address substring search *}
+  <div class="row">
+    <p class="col-md-3 text-right">{$mod->Lang('address')}</p>
+    <p class="col-md-9">
+      <input type="text" name="{$actionid}cd_address" size="40" value="{$saved.address|default:''}"/>
+    </p>
+  </div>
+
+  {* for lat/long radius searches *}
+  <div class="row">
+    <p class="col-md-3 text-right">{$mod->Lang('coordinates')}</p>
+    <p class="col-md-9">
+      {* note, if values are supplied for latitude and longitude then postal code is ignored *}
+      {$mod->Lang('latitude')}: <input id="latitude" type="text" name="{$actionid}cd_lat" size="10" maxlength="10" value="{$saved.lat|default:''}"/><br/>
+      {$mod->Lang('longitude')}: <input id="longitude" type="text" name="{$actionid}cd_long" size="10" maxlength="10" value="{$saved.long|default:''}"/><br/>
+    </p>
+  </div>
+
+  {* for postal code radius searches *}
+  <div class="row">
+    <p class="col-md-3 text-right">{$mod->Lang('postal_code')}</p>
+    <p class="col-md-9">
+      <input type="text" name="{$actionid}cd_postal" size="20" maxlength="20" value="{$saved.postal|default:''}"/>
+      {* you could also use the {$input_country} variable to display a country dropdown *}
+      <input type="hidden" name="{$actionid}cd_country" value="CA"/>
+      {* for US zips prolly should remove the postalchars stuff *}
+      <input type="hidden" name="{$actionid}cd_postalchars" value="3"/>
+      <input type="hidden" name="{$actionid}cd_searchaddress" value="0"/>
+    </p>
+  </div>
+
+  {* for all radius searches *}
+  <div class="row">
+    <p class="col-md-3 text-right">{$mod->Lang('radius')}</p>
+    <p class="col-md-9">
+      {assign var='radiuses' value=[10=>10,25=>25,50=>50,100=>100]}
+      <select name="{$actionid}cd_radius">
+        {html_options options=$radiuses selected=$saved.radius|default:-1}
+      </select>
+      <input type="hidden" name="{$actionid}cd_units" value="miles"/>
+    </p>
+  </div>
+
+ {* advanced filtering on hierarchies *}
+ {if isset($hierarchies)}
+ <div class="row">
+   <p class="col-md-3 text-right">{$mod->Lang('hierarchy')}:</p>
+   <p class="col-md-9">
+     <select name="{$actionid}cd_hier">
+       {html_options options=$hierarchies selected=$saved.hier|default:-1}
+     </select>
+   </p>
+ </div>
+ {/if}
+
+ {* advanced filtering on categories *}
+ {if isset($categories)}
+ <div class="row">
+   <p class="col-md-3 text-right">{$mod->Lang('categories')}:</p>
+   <p class="col-md-9">
+    {capture assign='tmp'}{$actionid}cd_category{/capture}
+    {html_checkboxes name=$tmp options=$categories separator='<br/>' selected=$saved.category|default:''}
+  </p>
+ </div>
+ {/if}
+
+ {* advanced filtering on a specific custom field*}
+ <div class="row">
+   <p class="col-md-3 text-right">MyField substring Test:</p>
+   <p class="col-md-9">
+     <input type="hidden" name="{$actionid}cdx_field[0][fldname]" value="myfield"/>{* hidden input for custom field name *}
+     <input type="text" name="{$actionid}cdx_field[0][fldval]" value=""/ size="10" value="{$saved.fields.myfield.fldval|default:''}">{* text input for custom field value *}
+     <input type="hidden" name="{$actionid}cdx_field[0][expr]" value="LIKE"/>{* hidden input for custom field expression *}
+   </p>
+ </div>
+ <div class="row">
+   <p class="col-md-3 text-right">Custom Field value test:</p>
+   <p class="col-md-9">
+     <input type="hidden" name="{$actionid}cdx_field[1][fldname]" value="myintfield"/>{* hidden input for custom field name *}
+     <input type="text" name="{$actionid}cdx_field[1][fldval]" value=""/ size="3" value="{$saved.fields.myintfield.fldval|default:''}>{* text input for custom field value *}
+     <input type="hidden" name="{$actionid}cdx_field[1][expr]" value="lt"/>{* hidden input for custom field expression *}
+     <input type="hidden" name="{$actionid}cdx_field[1][type]" value="int"/>{* hidden input for custom field expression *}
+   </p>
+ </div>
+
+ <div class="row">
+   <p class="col-md-3 text-right"></p>
+   <p class="col-md-9">
+     <input type="submit" name="{$actionid}cd_submit" value="{$mod->Lang('submit')}"/>
+     <input type="submit" name="{$actionid}cd_reset" value="{$mod->Lang('reset')}"/>
+   </p>
+ </div>
+
+{$formend}</div>{* #cd_searchform *}
+{/strip}";s:66:"CompanyDirectory_mapi_pref_companydir_pref_dfltsearchform_template";s:6:"Sample";s:67:"CompanyDirectory_mapi_pref_companydir_pref_newfrontendform_template";s:8587:"{cge_have_module m='CGGoogleMaps2' assign='have_maps'}
+{cge_have_module m='CGClientTickets' assign='have_tickets'}
+<script type="text/javascript">{jsmin}
+if( typeof jQuery == 'undefined' ) alert('jQuery is requried for this template');
+{if $have_maps}
+var geocodeurl  = '{module_action_link module='CGGoogleMaps2' action='getgeocode' urlonly=1}' + '&showtemplate=false';
+$(document).ready(function(){
+ $('#lookupgoeshere').html('<input type="submit" id="lookup" name="lookup" value="{$CompanyDirectory->Lang('lookup')}"/>');
+ $('#lookup').on('click',function(e){
+  var address = $('#address').val();
+  if( address != '' ) {
+    var url = geocodeurl.replace(/amp;/g,'');
+    var lat = 0;
+    var long = 0;
+    $.post(url, 'cntnt01address='+address,
+      function(data) {
+        if( data.status == 'success' ) {
+          lat = data.lat; long=data.lon;
+          $('#latitude').val(lat);
+          $('#longitude').val(long);
+        }
+      }
+      , "json" );
+  }
+  return false;
+ });
+{/if}
+
+$(document).ready(function(){
+ $('#cancel').on('click',function(){
+   var url = '{cms_selflink href=$page_alias}';
+   location.replace(url);
+   return false;
+ });
+ $('#edit_album').on('click',function(e){
+   return confirm('{$CompanyDirectory->Lang('confirm_edit_album')}');
+ });
+});
+{/jsmin}</script>
+
+<div class="row">
+{if $the_company->id > 1}
+<h4>{$CompanyDirectory->Lang('editcompany')}</h4>
+{else}
+<h4>{$CompanyDirectory->Lang('addcompany')}</h4>
+{/if}
+</div>
+
+{if isset($message)}
+<div class="alert alert-danger">{$message}</div>
+{/if}
+
+{if $have_tickets}
+  {module_action_link module=CGClientTickets action=newticket key1=CompanyDirectory key2=$the_company->id page='my-tickets' urlonly=1 assign='newticket'}
+{/if}
+
+{* this template uses bootstrap3 styles *}
+{$startform}
+<div class="navbar navbar-default" role="navigation">
+  <button class="btn btn-default" type="submit" name="{$actionid}cd_submit"><span class="glyphicon glyphicon-ok"></span> {$CompanyDirectory->Lang('submit')}</button>
+  <button class="btn btn-default" id="cancel"><span class="glyphicon glyphicon-remove"></span> {$CompanyDirectory->Lang('cancel')}</button>
+  {if isset($album_id) &&  $album_id}
+    <a id="edit_abum" href="{module_action_link module=CompanyDirectory action=fe_edit_album companyid=$the_company->id cd_fldid=$album_id urlonly=1}">{$CompanyDirectory->Lang('edit_album')}</a>
+  {/if}
+  {if $have_tickets}
+    <a href="{$newticket}" type="button" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-bell"></span> Create a Ticket about this Company</a>
+  {/if}
+</div>
+
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('companyname')}:</p>
+  <p class="col-md-9">
+    <input type="text" name="{$actionid}cd_company_name" value="{$the_company->company_name}" size="50" maxlength="255"/>
+  </p>
+</div>
+
+{if isset($statuses)}
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('status')}:</p>
+  <p class="col-md-9">
+    <select name="{$actionid}cd_status">
+      {html_options options=$statuses selected=$the_company->status}
+    </select>
+  </p>
+</div>
+{/if}
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('address')}:</p>
+  <p class="col-md-9">
+    <input type="text" id="address" name="{$actionid}cd_address" value="{$the_company->address}" size="30"/>
+    &nbsp;<span id="lookupgoeshere"></span>
+  </p>
+</div>
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('latitude')}:</p>
+  <p class="col-md-9">
+    <input type="text" name="{$actionid}cd_latitude" id="latitude" value="{$the_company->latitude}" size="10" maxlength="10"/>
+  </p>
+</div>
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('longitude')}:</p>
+  <p class="col-md-9">
+    <input type="text" name="{$actionid}cd_longitude" id="longitude" value="{$the_company->longitude}" size="10" maxlength="10"/>
+  </p>
+</div>
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('telephone')}:</p>
+  <p class="col-md-9">
+    <input type="text" name="{$actionid}cd_telephone" value="{$the_company->telephone}" size="20" maxlength="20"/>
+  </p>
+</div>
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('fax')}:</p>
+  <p class="col-md-9">
+    <input type="text" name="{$actionid}cd_telephone" value="{$the_company->telephone}" size="20" maxlength="20"/>
+  </p>
+</div>
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('contactemail')}:</p>
+  <p class="col-md-9">
+    <input type="text" name="{$actionid}cd_contact_email" value="{$the_company->contact_email}" size="20" maxlength="20"/>
+  </p>
+</div>
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('website')}:</p>
+  <p class="col-md-9">
+    <input type="text" name="{$actionid}cd_website" value="{$the_company->website}" size="20" maxlength="20"/>
+  </p>
+</div>
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('details')}:</p>
+  <p class="col-md-9">
+    {cge_textarea prefix=$actionid name=cd_details wysiwyg=true content=$the_company->details}
+  </p>
+</div>
+
+{* image, and logo are deprecated *}
+
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('imagetext')}:</p>
+  <p class="col-md-9">
+    <input type="file" name="{$actionid}cd_image" size="50" accept="image/*"/>
+    {if $the_company->image_location}
+    <br/>
+    {$CompanyDirectory->Lang('current_value')}:&nbsp;{$the_company->image_location}<br/>
+    <label for="cd_deleteimage">{$CompanyDirectory->Lang('delete')}&nbsp;</label><input type="checkbox" name="{$actionid}cd_deleteimage" value="1" id="cd_deleteimage"/>
+    {/if}
+  </p>
+</div>
+
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('logotext')}:</p>
+  <p class="col-md-9">
+    <input type="file" name="{$actionid}cd_logo" size="50" accept="image/*"/>
+    {if $the_company->logo_location}
+    <br/>
+    {$CompanyDirectory->Lang('current_value')}:&nbsp;{$the_company->logo_location}<br/>
+    <label for="cd_deletelogo">{$CompanyDirectory->Lang('delete')}&nbsp;</label><input type="checkbox" name="{$actionid}cd_deletelogo" value="1" id="cd_deletelogo"/>
+    {/if}
+  </p>
+</div>
+
+{if isset($fielddefs)}
+ {foreach $fielddefs as $fldname => $fielddef}
+ {$fld_value=$the_company->get_field_value($fielddef->id)}
+ <div class="row">
+   <p class="col-md-3 text-right">{$fielddef->name}:</p>
+   <p class="col-md-9">
+     {if $fielddef->type == 'file' || $fielddef->type == 'image'}
+       <input type="file" name="{$actionid}cd_field_{$fielddef->id}" size="50"/>
+       {if isset($fld_value) && $fld_value}
+       <br/>
+       {$CompanyDirectory->Lang('current_value')}:&nbsp;{$fld_value|default:''}
+       <br/>
+       <label for="cd_field_{$fielddef->id}">{$CompanyDirectory->Lang('delete')}&nbsp;</label><input type="checkbox" id="cd_field_{$fielddef->id}" name="{$actionid}cd_deletefield_{$fielddef->id}" value="1"/>
+        {/if}
+     {elseif $fielddef->type == 'checkbox'}
+       <input type="checkbox" name="{$actionid}cd_field_{$fielddef->id}" value="1" {if $fld_value}checked="checked"{/if}/>
+     {elseif $fielddef->type == 'textbox'}
+       <input type="text" name="{$actionid}cd_field_{$fielddef->id}" value="{$fld_value|default:''}" size="50" maxlength="255"/>
+     {elseif $fielddef->type == 'textarea'}
+       <textarea name="{$actionid}cd_field_{$fielddef->id}" rows="5" cols="50">{$fld_value|default:''}</textarea>
+     {elseif $fielddef->type == 'dropdown' || $fielddef->type == 'icon'}
+       <select name="{$actionid}cd_field_{$fielddef->id}">
+       {html_options options=$fielddef->options selected=$fld_value|default:''}
+       </select>
+     {elseif $fielddef->type == 'multiselect'}
+       <select name="{$actionid}cd_field_{$fielddef->id}[]" size="3" multiple="multiple">
+       {html_options options=$fielddef->options selected=$fielddef->selected|default:''}
+       </select>
+     {/if}
+   </p>
+ </div>
+ {/foreach}
+{/if}
+
+<div class="row">
+ <p class="col-md-3 text-right">{$CompanyDirectory->Lang('hierarchy')}:</p>
+ <p class="col-md-9">
+   <select name="{$actionid}cd_hier_id">
+     {html_options options=$hierarchy_list selected=$the_company->hier_id}
+   </select>
+ </p>
+</div>
+
+{if isset($categories) && count($categories)}
+<div class="row">
+  <p class="col-md-3 text-right">{$CompanyDirectory->Lang('categories')}:</p>
+  <p class="col-md-9">
+    <select name="{$actionid}cd_categories[]" multiple="multiple" size="5">
+      {html_options options=$catnames selected=$sel_categories}
+    </select>
+  </p>
+</div>
+{/if}
+
+{$endform}
+";s:68:"CompanyDirectory_mapi_pref_companydir_pref_dfltfrontendform_template";s:6:"Sample";s:67:"CompanyDirectory_mapi_pref_companydir_pref_newfrontendlist_template";s:2279:"{* template to list a particular users companies and optionally allow editing *}
+<div id="compdir_frontend_list">
+{if isset($records)}
+  {$tmp=[]}
+  {foreach $records as $onerecord}
+    {$tmp[]=$onerecord.id}
+  {/foreach}
+  {cd_searchstats list=$tmp assign='searchhits'}
+{/if}
+
+{if isset($fe_add_url)}
+<div class="navbar navbar-default" role="navigation">
+  <a type="button" class="btn btn-default navbar-btn" href="{$fe_add_url}">
+     <span class="glyphicon glyphicon-plus"></span> {$mod->Lang('addcompany')}
+  </a>
+  {if isset($fe_import_url)}
+    <a type="button" class="btn btn-default navbar-btn" href="{$fe_import_url}">
+      <span class="glyphicon glyphicon-import"></span> {$mod->Lang('importcsv')}
+    </a>
+  {/if}
+</div>
+{/if}
+
+{if isset($records)}
+  <table class="table">
+    <thead>
+      <tr>
+        <th>{$mod->Lang('id')}</th>
+        <th>{$mod->Lang('name')}</th>
+        <th>{$mod->Lang('status')}</th>
+        <th>{$mod->Lang('created')}</th>
+        <th>{$mod->Lang('modified')}</th>
+        <th>{$mod->Lang('searches')}</th>
+        {if $have_album}<th class="icon"></th>{/if}
+        <th class="icon"></th>
+        {if $frontend_delete}<th class="icon"></th>{/if}
+      </tr>
+    </thead>
+    <tbody>
+    {foreach from=$records item='onerecord'}
+      <tr>
+        <td>{$onerecord.id}</td>
+        <td>{$onerecord.company_name}</td>
+        <td>{$mod->Lang($onerecord.status)}</td>
+        <td>{$onerecord.create_date|cms_date_format}</td>
+        <td>{$onerecord.modified_date|cms_date_format}</td>
+        <td>{$num=$searchhits[$onerecord.id]}
+          {if $num > 0}
+            {module_action_link action='searchstats' companyid=$onerecord.id urlonly=1 assign='searchstats_url'}
+            <a href="{$searchstats_url}">{$num}</a>
+          {else}
+            {$num|default:0}
+          {/if}
+        </td>
+        {if $have_album}<td><a href="{$onerecord.gallery_url}">{$mod->Lang('album')}</a></td>{/if}
+        <td><a href="{$onerecord.edit_url}"><span class="glyphicon glyphicon-edit" title="{$mod->Lang('edit')}"></span></a></td>
+        {if $frontend_delete}<td><a href="{$onerecord.delete_url}"><span class="glyphicon glyphicon-remove" title="{$mod->Lang('delete')}"></a></td>{/if}
+      </tr>
+    {/foreach}
+    </tbody>
+  </table>
+{/if}
+</div>";s:68:"CompanyDirectory_mapi_pref_companydir_pref_dfltfrontendlist_template";s:6:"Sample";s:62:"CompanyDirectory_mapi_pref_companydir_pref_newabclist_template";s:1796:"{* default abclist template *}
+<style type="text/css">
+nav.abclist ul {
+   list-style-type: none;
+}
+nav.abclist li.current a {
+   color: red;
+}
+nav.abclist li {
+   display: inline-block;
+   margin-right: 0.5em;
+}
+</style>
+
+{if !empty($error)}
+   <div class="alert alert-danger">{$error}</div>
+{else}
+   <nav class="abclist">
+     <ul>
+       {foreach $abclist as $letter => $rec}
+         <li {if $rec.current}class="current"{/if}>
+	   {if $rec.count < 1}
+	     {$letter}
+	   {else}
+  	     <a href="{$rec.url}" title="{$rec.count}">{$letter}</a>
+	   {/if}
+	 </li>
+       {/foreach}
+     </ul>
+   </nav>
+
+   {if !empty($items)}
+      <h3>Items</h3>
+      {* pagination *}
+      {$npages = $pagination->get_page_count()}
+      {if $npages > 1}
+         <div class="row text-right">
+	    {$page=$pagination->get_current_page()}
+	    {if $page > 1}
+	      <a href="{$pagination->get_firstpage_url()}">{$mod->Lang('firstpage')}</a>&nbsp;
+	      <a href="{$pagination->get_prevpage_url()}">{$mod->Lang('prevpage')}</a>&nbsp;
+	    {/if}
+	    {$mod->lang('page')} {$page} {$mod->Lang('of')} {$npages}
+	    {if $page < $npages}
+	      <a href="{$pagination->get_nextpage_url()}">{$mod->Lang('nextpage')}</a>&nbsp;
+	      <a href="{$pagination->get_lastpage_url()}">{$mod->Lang('lastpage')}</a>&nbsp;
+	    {/if}
+	 </div>
+      {/if}
+
+      {foreach $items as $item}
+      <div class="row CompanyDirectoryItem">
+        {if $item->picture_location}
+	  <div class="col-sm-3">{CGSmartImage src=$item->picture_path height=150 width=150}</div>
+	{/if}
+	<div class="col-sm-9 row">
+  	  <h4><a href="{$item->detail_url}">{$item->company_name}</a></h4>
+	  {if $item->address}<p>{$item->address}</p>{/if}
+	  {if $item->website}<p>{$item->website}</p>{/if}
+        </div>
+      </div>
+      {/foreach}
+   {/if}
+{/if}";s:63:"CompanyDirectory_mapi_pref_companydir_pref_dfltabclist_template";s:6:"Sample";s:68:"CompanyDirectory_mapi_pref_companydir_pref_newfrontendalbum_template";s:6058:"{*
+ ** frontend edit album template **
+ This is a sample template... illustrating how to enable editing using the fe_edit_gallery action
+ Like all other module templates, this is not intended to be a complete working solution for all websites.  It is simply a starting point.
+
+ This template provides sorting, drag and drop upload (for most non IE browsers) and drag to delete functionality.  but it's styling is crude.
+
+ This template uses the JQueryUI progrees bar, draggable and droppable classes, as well as the bluimp file upload capabilities.
+ These javascript libraries must be included in the page before this template can be  used successfully.
+
+ The file field named 'image_upload' is important and must be retained.
+ The fe_edit_album action accepts these parameters:
+   companyid    = the company id
+   cd_fldid     = the field id (must be a field of type album, and must be public)
+   cd_subaction = none (outputs whole template), gallery, delete, sort, or upload
+   cd_order     = array of integers representing the new order (for the sort subaction)
+   cd_idx       = integer index of the item to delete (for the delete subaction)
+*}
+
+{if $subaction != 'gallery'}
+<script type="text/javascript">
+//<![CDATA[
+function _refresh_gallery() {
+  $('#cd_edit_gallery').load('{module_action_link module='CompanyDirectory' action=$actionparams.action companyid=$companyid cd_fldid=$actionparams.cd_fldid cd_subaction=gallery urlonly=1 jsfriendly=1}&showtemplate=false',function(){
+  // fancyboxes for images
+  if( $.fancybox ) {
+     $('a.fancybox').fancybox();
+   }
+
+   $('#cd_edit_gallery_files li').draggable({
+     revert: 'invalid'
+   });
+
+   // make sortable stuff
+   $('#cd_edit_gallery_files').sortable({
+     cursor: 'crosshair',
+     update: function() {
+       var order = [];
+       $('#cd_edit_gallery_files li').each(function(idx,elm){
+         alert(elm.id+' '+elm.id.split('_',3)[2]);
+         order.push(elm.id.split('_',3)[2]);
+       });
+       $.ajax({
+         url: '{module_action_link module='CompanyDirectory' action=$actionparams.action companyid=$companyid cd_fldid=$actionparams.cd_fldid cd_subaction=sort urlonly=1 jsfriendly=1}&showtemplate=false',
+	 type: 'POST',
+         data: { cntnt01cd_order: order },
+         success: function(data,textStatus,jqXHR) {
+           _refresh_gallery();
+         }
+       });
+     }
+   });
+ });
+}
+
+$(document).ready(function(){
+  _refresh_gallery();
+
+  if( $.fileupload ) {
+    $(document).bind('drop dragover', function(e) {
+      e.preventDefault();
+    });
+  }
+
+  // drag/drop upload stuff
+  $('#image_upload').fileupload({
+    dataType: 'json',
+    dropzone: $('#cd_album_dropzone'),
+    url: '{module_action_link module=CompanyDirectory action=$actionparams.action companyid=$companyid cd_fldid=$actionparams.cd_fldid cd_subaction=upload urlonly=1 jsfriendly=1}&showtemplate=false',
+    form: null,
+    formData: { cntnt01cd_foo: 'bar' },
+    maxChunkSize: 500*1024,
+
+    progressall: function(e,data) {
+      // create a progress bar (requires jquery UI)
+      if( $.progressbar ) {
+        var total = (data.loaded / data.total * 100).toFixed(0);
+        $('#cd_album_dropzone').progressbar({ value: parseInt(total) });
+        $('.ui-progressbar-value').html(total+'%');
+      }
+    },
+
+    stop: function(e,data) {
+      // hide the progress bar (requires jquery UI)
+      if( $.progressbar ) {
+        $('#cd_album_dropzone').progressbar('destroy');
+      }
+    },
+
+    done: function(e,data) {
+      if( data.result ) {
+        for( var key in data.result ) {
+          if( data.result[key].error ) {
+            alert(data.result[key].name+' failed: '+data.result[key].error);
+          }
+        }
+      }
+      _refresh_gallery();
+    }
+  });
+
+  $('#cd_album_delzone').droppable({
+     drop: function(event,ui) {
+       ui.draggable.fadeOut('slow');
+       var x = ui.draggable.attr('id');
+       var idx = x.split('_',3)[2];
+
+       $.ajax({
+         url: '{module_action_link module='CompanyDirectory' action=$actionparams.action companyid=$companyid cd_fldid=$actionparams.cd_fldid cd_subaction=delete urlonly=1 jsfriendly=1}&showtemplate=false',
+         type: 'POST',
+         data: { cntnt01cd_idx: idx },
+	 error: function (jqXHR, textStatus, errorThrown) {
+           alert('upload failed: '.errorThrown);
+         },
+         success: function( data, textStatus, jqXHR ) {
+           _refresh_gallery();
+         }
+       });
+     }
+  });
+});
+//]]>
+</script>
+
+<style type="text/css">
+{* this css should be moved into your public stylesheets *}
+#cd_edit_gallery_files li {
+  margin: 3px 3px 3px 0; padding: 1px;
+  float: left;
+  width: 100px;
+  height: 90px;
+  font-size: 4em;
+  text-align: center;
+  border: 1px solid black;
+}
+#cd_album_dropzone {
+  height: 64px;
+  width: 64px;
+  float: left;
+  bordeR: 1px solid red;
+  background-image: url('{root_url}/modules/CompanyDirectory/icons/upload_sm.png');
+}
+#cd_album_delzone {
+  height: 64px;
+  width: 64px;
+  float: left;
+  border: 1px solid green;
+  background-image: url('{root_url}/modules/CompanyDirectory/icons/recycle_sm.png');
+}
+</style>
+
+{cge_isie assign='ie'}
+<fieldset>
+<legend>{$CompanyDirectory->Lang('upload')}:</legend>
+  <div style="width: 49%; float: left;">
+    <input type="file" name="image_upload" id="image_upload" multiple/>
+  </div>
+  {if !$ie}
+  <div style="width: 49%; float: left;">
+    <div id="cd_album_dropzone" title="{$CompanyDirectory->Lang('drop_here')}"></div>
+    <div id="cd_album_delzone" title="{$CompanyDirectory->Lang('drop_here_to_delete')}"></div>
+  </div>
+  {/if}
+  <div style="clear: both;"></div>
+</fieldset>
+
+<div id="cd_edit_gallery">
+{/if}
+
+  {if isset($files)}
+    <ul id="cd_edit_gallery_files" style="list-style: none;">
+    {foreach from=$files item='one_file'}
+      <li id="file_idx_{$one_file@index}"><a class="fancybox" href="{CGSmartImage src1=$base_url src2=$one_file noembed=1 width=500 width=500 notag=1}">{CGSmartImage src1=$base_dir src2=$one_file width=80 height=80}</a></li>
+    {/foreach}
+    </ul>
+  {/if}
+
+{if $subaction != 'gallery'}
+</div>
+{/if}";s:69:"CompanyDirectory_mapi_pref_companydir_pref_dfltfrontendalbum_template";s:6:"Sample";s:67:"CompanyDirectory_mapi_pref_companydir_pref_newstatssummary_template";s:1899:"{* search statistics summary view *}
+
+{* usage: {expand_dd_selected options=array_options selected=$selected_keys *}
+{function expand_dd_selected}
+  {if is_array($selected) || $selected != ''}
+    {if !is_array($selected)}{$selected=[$selected]}{/if}
+    {$vals=[]}
+    {foreach $selected as $one}
+      {$vals[]=$options[$one]}
+    {/foreach}
+    {implode(', ',$vals)}
+  {/if}
+{/function}
+
+{if isset($searches)}
+  {* todo: navigation stuff here *}
+  <table>
+    <thead>
+      <tr>
+        <th>{$mod->Lang('search_date')}</th>
+        <th>{$mod->Lang('search_ip')}</th>
+        <th>{$mod->Lang('search_name')}</th>
+        <th>{$mod->Lang('search_address')}</th>
+        <th>{$mod->Lang('search_postal')}</th>
+        <th>{$mod->Lang('search_hier')}</th>
+        <th>{$mod->Lang('search_categories')}</th>
+        <th>Mining: {* a dropdown custom field *}</th>
+        <th>ms1: {* a multiselect custom field *}</th>
+      </td>
+    </thead>
+    <tbody>
+    {foreach $searches as $search}
+      <tr>
+        <td>{$search.date_searched}</td>
+        <td>{$search.ip_address}</td>
+        <td>{$search.vals.name|default:''}</td>
+        <td>{$search.vals.adddress|default:''}</td>
+        <td>{$search.vals.postal|default:''}</td>
+        <td>
+           {if isset($search.vals.hier)}
+             {$hierarchies[$search.vals.hier]}
+           {/if}
+        </td>
+        <td>
+          {if isset($search.vals.category)}
+            {foreach $search.vals.category as $catid}
+              {$cats2[]=$categories[$search.vals.category]}
+            {/foreach}
+            {implode(', ',$cats2)}
+          {/if}
+        </td>
+        <td>{expand_dd_selected options=$fields.Mining.options selected=$search.vals.field_Mining|default:''}</td>
+        <td>{expand_dd_selected options=$fields.ms1.options selected=$search.vals.field_ms1|default:''}</td>
+      </tr>
+    {/foreach}
+    </tbody>
+  </table>
+{/if}";s:68:"CompanyDirectory_mapi_pref_companydir_pref_dfltstatssummary_template";s:6:"Sample";s:43:"CompanyDirectory_mapi_pref_import_delimeter";s:1:"|";s:43:"CompanyDirectory_mapi_pref_import_fielddefs";s:1:"1";s:43:"CompanyDirectory_mapi_pref_import_fieldvals";s:1:"1";s:46:"CompanyDirectory_mapi_pref_import_categorydefs";s:1:"1";s:46:"CompanyDirectory_mapi_pref_import_categoryvals";s:1:"1";s:47:"CompanyDirectory_mapi_pref_import_lookuplatlong";s:1:"0";s:49:"CompanyDirectory_mapi_pref_import_checkduplicates";s:1:"1";s:53:"CompanyDirectory_mapi_pref_admin_feedit_email_subject";s:49:"A change has occurred to a CompanyDirectory entry";s:52:"CompanyDirectory_mapi_pref_admin_feedit_email_ishtml";s:1:"1";s:43:"CompanyDirectory_mapi_pref_frontend_editor2";s:1:"1";s:66:"CompanyDirectory_mapi_pref_cgeint_2fea9a1a52e9643eec410487de3e2df8";s:10:"1499784315";s:37:"MleCMS_mapi_pref_mle_hierarchy_switch";s:1:"1";s:34:"MleCMS_mapi_pref_mle_auto_redirect";s:1:"0";s:37:"MleCMS_mapi_pref_default_mle_template";s:643:"{if $langs_count}
+    {foreach from=$langs item=l name=language}
+    {capture assign="lang_href"}{cms_selflink href=$l.alias}{/capture}
+    {if $lang_href}
+        {if $page_alias==$l.alias}
+            <span class="active">
+        {if $l.flag}<img src="uploads/{$l.flag}" alt="{$l.name}" title="{$l.name}"  />{else}{$l.name}{/if}
+    </span>
+{else}
+    <a   {if $l.flag}style="-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)'; filter: alpha(opacity=50); opacity:.5;"{/if} href="{$lang_href}">
+{if $l.flag}<img src="uploads/{$l.flag}" alt="{$l.name}" title="{$l.name}"  />{else}{$l.name}{/if}
+</a>
+{/if}
+{/if}
+{/foreach}
+{/if}";s:37:"MleCMS_mapi_pref_current_mle_template";s:5:"Flags";s:56:"MleCMS_mapi_pref_cgeint_d7bc01f7481322014d3b31dfa9e05b15";s:10:"1500160434";s:39:"MleCMS_mapi_pref_mle_search_restriction";s:1:"1";s:25:"MleCMS_mapi_pref_mle_init";s:11:"__DEFAULT__";s:62:"CGSmartImage_mapi_pref_cgeint_f691c6e4c58af40e814256ea3063ad48";s:10:"1499783219";s:44:"CGSmartImage_mapi_pref_croptofit_default_loc";s:1:"c";s:33:"CGSmartImage_mapi_pref_cache_path";s:0:"";s:39:"CGSmartImage_mapi_pref_image_url_prefix";s:0:"";s:29:"CGSmartImage_mapi_pref_silent";s:1:"0";s:34:"CGSmartImage_mapi_pref_checkmemory";s:1:"1";s:38:"CGSmartImage_mapi_pref_force_extension";s:1:"1";s:35:"CGSmartImage_mapi_pref_autoscale_op";s:9:"croptofit";s:40:"CGSmartImage_mapi_pref_assume_responsive";s:1:"0";s:45:"CGSmartImage_mapi_pref_responsive_breakpoints";s:0:"";s:33:"Products_mapi_pref_default_status";s:9:"published";s:29:"Products_mapi_pref_detailpage";s:1:"0";s:27:"Products_mapi_pref_hierpage";s:1:"0";s:33:"Products_mapi_pref_prettyhierurls";s:1:"0";s:28:"Products_mapi_pref_sortorder";s:3:"asc";s:37:"Products_mapi_pref_summary_newdefault";s:1:"0";s:35:"LISEPublishers_mapi_pref_item_title";s:5:"Title";s:34:"Products_mapi_pref_default_taxable";s:1:"1";s:64:"LISEPublishers_mapi_pref_lisepublishers_default_summary_template";s:7:"default";s:63:"LISEPublishers_mapi_pref_lisepublishers_default_detail_template";s:7:"default";s:63:"LISEPublishers_mapi_pref_lisepublishers_default_search_template";s:7:"default";s:65:"LISEPublishers_mapi_pref_lisepublishers_default_category_template";s:7:"default";s:64:"LISEPublishers_mapi_pref_lisepublishers_default_archive_template";s:7:"default";s:34:"LISEPublishers_mapi_pref_sortorder";s:3:"ASC";s:37:"LISEPublishers_mapi_pref_adminsection";s:7:"content";s:35:"LISEPublishers_mapi_pref_url_prefix";s:14:"lisepublishers";s:36:"LISEPublishers_mapi_pref_urltemplate";s:23:"{$prefix}/{$item_title}";s:37:"LISEPublishers_mapi_pref_friendlyname";s:14:"LISEPublishers";s:38:"LISEPublishers_mapi_pref_item_singular";s:4:"Item";s:36:"LISEPublishers_mapi_pref_item_plural";s:5:"Items";s:37:"LISETestimonials_mapi_pref_url_prefix";s:16:"lisetestimonials";s:36:"LISETestimonials_mapi_pref_sortorder";s:3:"ASC";s:39:"LISETestimonials_mapi_pref_adminsection";s:7:"content";s:21:"enablesitedownmessage";s:1:"0";s:20:"sitedown_use_wysiwyg";s:1:"0";s:16:"sitedownexcludes";s:0:"";s:21:"sitedownexcludeadmins";s:1:"1";s:11:"mail_is_set";s:1:"1";s:9:"mailprefs";s:386:"a:12:{s:6:"mailer";s:4:"smtp";s:4:"host";s:14:"smtp.gmail.com";s:4:"port";s:3:"465";s:4:"from";s:22:"songviytuong@gmail.com";s:8:"fromuser";s:17:"Lee Administrator";s:8:"sendmail";s:18:"/usr/sbin/sendmail";s:8:"smtpauth";s:1:"1";s:8:"username";s:22:"songviytuong@gmail.com";s:8:"password";s:16:"szlqrnxflialtdof";s:6:"secure";s:3:"ssl";s:7:"timeout";s:2:"60";s:7:"charset";s:5:"utf-8";}";s:49:"LISESEO_mapi_pref_liseseo_default_detail_template";s:7:"default";s:49:"LISESEO_mapi_pref_liseseo_default_search_template";s:7:"default";s:51:"LISESEO_mapi_pref_liseseo_default_category_template";s:7:"default";s:50:"LISESEO_mapi_pref_liseseo_default_archive_template";s:7:"default";s:27:"LISESEO_mapi_pref_sortorder";s:3:"ASC";s:30:"LISESEO_mapi_pref_adminsection";s:7:"content";s:28:"LISESEO_mapi_pref_url_prefix";s:7:"liseseo";s:29:"LISESEO_mapi_pref_urltemplate";s:23:"{$prefix}/{$item_title}";s:30:"LISESEO_mapi_pref_friendlyname";s:7:"LISESEO";s:31:"LISESEO_mapi_pref_item_singular";s:4:"Item";s:29:"LISESEO_mapi_pref_item_plural";s:5:"Items";s:28:"LISESEO_mapi_pref_item_title";s:5:"Title";s:32:"LISESEO_mapi_pref_moddescription";s:77:"LISE allows you to create lists that you can display throughout your website.";s:37:"LISESEO_mapi_pref_display_create_date";s:1:"0";s:27:"LISESEO_mapi_pref_item_cols";s:5:"alias";s:32:"LISESEO_mapi_pref_items_per_page";s:2:"20";s:32:"LISESEO_mapi_pref_display_inline";s:1:"0";s:29:"LISESEO_mapi_pref_subcategory";s:1:"0";s:28:"LISESEO_mapi_pref_detailpage";s:1:"0";s:29:"LISESEO_mapi_pref_summarypage";s:1:"0";s:32:"LISESEO_mapi_pref_reindex_search";s:1:"0";s:30:"LISESEO_mapi_pref_auto_upgrade";s:1:"0";s:28:"LISESEO_mapi_pref_sent_email";s:1:"0";s:30:"LISESEO_mapi_pref_time_control";s:1:"0";s:38:"CMSContentManager_mapi_pref_page_prefs";s:390:"a:16:{s:11:"contenttype";s:7:"content";s:16:"disallowed_types";s:0:"";s:9:"design_id";s:2:"10";s:11:"template_id";s:2:"30";s:9:"parent_id";i:-2;s:6:"secure";s:1:"0";s:8:"cachable";s:1:"1";s:6:"active";s:1:"1";s:10:"showinmenu";s:1:"1";s:8:"metadata";s:0:"";s:7:"content";s:0:"";s:10:"searchable";s:1:"1";s:11:"addteditors";a:0:{}s:6:"extra1";s:0:"";s:6:"extra2";s:0:"";s:6:"extra3";s:0:"";}";s:64:"CGContentUtils_mapi_pref_cgeint_103cf8d2faee1d709f26f391de42e08b";s:10:"1499785107";s:48:"FilePicker_mapi_pref_ProfileDAO_defaultProfileId";s:1:"1";s:58:"LISECourses_mapi_pref_lisecourses_default_summary_template";s:7:"default";s:57:"LISECourses_mapi_pref_lisecourses_default_detail_template";s:7:"default";s:57:"LISECourses_mapi_pref_lisecourses_default_search_template";s:7:"default";s:59:"LISECourses_mapi_pref_lisecourses_default_category_template";s:7:"default";s:58:"LISECourses_mapi_pref_lisecourses_default_archive_template";s:7:"default";s:31:"LISECourses_mapi_pref_sortorder";s:3:"ASC";s:34:"LISECourses_mapi_pref_adminsection";s:7:"content";s:32:"LISECourses_mapi_pref_url_prefix";s:11:"lisecourses";s:33:"LISECourses_mapi_pref_urltemplate";s:23:"{$prefix}/{$item_title}";s:34:"LISECourses_mapi_pref_friendlyname";s:11:"LISECourses";s:35:"LISECourses_mapi_pref_item_singular";s:4:"Item";s:33:"LISECourses_mapi_pref_item_plural";s:5:"Items";s:32:"LISECourses_mapi_pref_item_title";s:5:"Title";s:31:"Products_mapi_pref_prodnotfound";s:5:"domsg";s:34:"Products_mapi_pref_prodnotfoundmsg";s:37:"The requested item could not be found";s:35:"Products_mapi_pref_prodnotfoundpage";s:2:"-1";s:30:"Products_mapi_pref_skurequired";s:1:"0";s:38:"CGSmartImage_mapi_pref_embed_sizelimit";s:1:"0";s:34:"CGSmartImage_mapi_pref_embed_types";s:0:"";s:28:"Products_mapi_pref_urlprefix";s:6:"course";s:35:"LISEBanners_mapi_pref_item_singular";s:4:"Item";s:33:"LISEBanners_mapi_pref_item_plural";s:5:"Items";s:32:"LISEBanners_mapi_pref_item_title";s:5:"Title";s:36:"ModuleManager_mapi_pref_dl_chunksize";s:3:"256";s:37:"ModuleManager_mapi_pref_latestdepends";s:1:"1";s:38:"ModuleManager_mapi_pref_allowuninstall";s:1:"0";s:42:"JMFilePicker_mapi_pref_thumb_upload_action";s:0:"";s:47:"JMFilePicker_mapi_pref_thumb_prefix_replacement";s:0:"";s:36:"JMFilePicker_mapi_pref_force_scaling";s:0:"";s:36:"TinyMCE_mapi_pref_id_default_profile";s:1:"2";s:34:"TinyMCE_mapi_pref_filemanager_salt";s:10:"e706c0ce5e";s:40:"MicroTiny_mapi_pref_profile___frontend__";s:262:"a:10:{s:4:"name";s:12:"__frontend__";s:5:"label";s:16:"Frontend Editors";s:7:"menubar";b:0;s:11:"allowimages";b:0;s:13:"showstatusbar";b:0;s:11:"allowresize";b:0;s:6:"system";b:1;s:11:"allowtables";b:0;s:14:"dfltstylesheet";s:2:"-1";s:16:"allowcssoverride";b:0;}";s:37:"MicroTiny_mapi_pref_profile___admin__";s:255:"a:10:{s:4:"name";s:9:"__admin__";s:5:"label";s:13:"Admin Editors";s:7:"menubar";b:1;s:11:"allowimages";b:1;s:13:"showstatusbar";b:1;s:11:"allowresize";b:1;s:6:"system";b:1;s:11:"allowtables";b:0;s:14:"dfltstylesheet";s:2:"-1";s:16:"allowcssoverride";b:0;}";s:59:"BoxPacker_mapi_pref_cgeint_29751c5585377842c24a4bedca626802";s:10:"1499786039";s:65:"CGEcommerceBase_mapi_pref_cgeint_a5adb44b59df968f8622c89054e0349d";s:10:"1499786223";s:43:"FrontEndUsers_mapi_pref_auto_create_unknown";s:1:"0";s:35:"FrontEndUsers_mapi_pref_auth_module";s:11:"__BUILTIN__";s:42:"FrontEndUsers_mapi_pref_use_randomusername";s:1:"0";s:44:"FrontEndUsers_mapi_pref_notification_address";s:0:"";s:52:"FrontEndUsers_mapi_pref_feusers_specific_permissions";s:1:"0";s:41:"FrontEndUsers_mapi_pref_forcelogout_times";s:0:"";s:46:"FrontEndUsers_mapi_pref_forcelogout_sessionage";s:1:"0";s:44:"FrontEndUsers_mapi_pref_expireusers_interval";s:1:"0";s:39:"FrontEndUsers_mapi_pref_pagetype_groups";s:1:"1";}

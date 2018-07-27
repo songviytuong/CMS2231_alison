@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+  <title><![CDATA[FrontEndUsers for #cmsms by calguy1000]]></title>
+  <parser>
+    <target>/tmp/FrontEndUsers.x</target>
+  </parser>
+  <transformer>
+    <target>docs/apidoc</target>
+  </transformer>
+  <files>
+    <file>FrontEndUsers.module.php</file>
+    <file>lib/class.feu_user_query.php</file>
+    <file>lib/class.feu_user_query_resultset.php</file>
+  </files>
+</phpdoc>
